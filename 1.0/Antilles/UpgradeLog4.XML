@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Antilles">
+</Property><Property Name="Solution File" Value="C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2010\Projects\Antilles\Antilles.sln">
+</Property><Property Name="Date" Value="Sonntag, 25. April 2010">
+</Property><Property Name="Time" Value="19:17:05">
+</Property><Property Name="Log Number" Value="4">
+</Property></Properties><Event ErrorLevel="0" Project="Antilles" Source="SaxonTest_1\Antilles.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Antilles" Source="SaxonTest_1\Antilles.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Antilles" Source="SaxonTest_1\Antilles.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Antilles" Source="SaxonTest_1\Antilles.csproj" Description="References to Microsoft.VisualBasic.PowerPacks.Vs were updated to Microsoft.VisualBasic.PowerPacks.Vs 10.0.">
+</Event></UpgradeLog>

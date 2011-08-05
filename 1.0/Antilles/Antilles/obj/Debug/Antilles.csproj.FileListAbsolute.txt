@@ -1,0 +1,41 @@
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\bin\Debug\Antilles.exe
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\bin\Debug\Antilles.pdb
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\bin\Debug\IKVM.Runtime.dll
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\obj\Debug\Antilles.About.resources
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\obj\Debug\Antilles.Eigenschaften.resources
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\obj\Debug\Antilles.Hauptfenster.resources
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\obj\Debug\Antilles.Properties.Resources.resources
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\obj\Debug\Antilles.csproj.GenerateResource.Cache
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\obj\Debug\Antilles.exe
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\obj\Debug\Antilles.pdb
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\bin\Debug\Antilles.exe.config
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\obj\Debug\Antilles.AntillesEigenschaften.resources
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\obj\Debug\Antilles.csproj.ResolveComReference.cache
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\bin\Debug\IKVM.OpenJDK.ClassLibrary.dll
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\bin\Debug\saxon9api.dll
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\bin\Debug\saxon9.dll
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\bin\Debug\saxon9api.netmodule
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\bin\Debug\Gfx\Death-Star.ico
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\Antilles\SaxonTest_1\obj\Debug\Antilles.Splash.resources
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\bin\Debug\Antilles.exe.config
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\obj\Debug\Antilles.exe
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\obj\Debug\Antilles.pdb
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\bin\Debug\Antilles.exe
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\bin\Debug\Antilles.pdb
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\bin\Debug\IKVM.OpenJDK.ClassLibrary.dll
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\bin\Debug\saxon9api.dll
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\bin\Debug\IKVM.Runtime.dll
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\bin\Debug\saxon9.dll
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\bin\Debug\saxon9api.netmodule
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\obj\Debug\Antilles.About.resources
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\obj\Debug\Antilles.AntillesEigenschaften.resources
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\obj\Debug\Antilles.Eigenschaften.resources
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\obj\Debug\Antilles.Hauptfenster.resources
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\obj\Debug\Antilles.Help.resources
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\obj\Debug\Antilles.ParameterFenster.resources
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\obj\Debug\Antilles.Properties.Resources.resources
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\obj\Debug\Antilles.Splash.resources
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\obj\Debug\ResGen.read.1.tlog
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\obj\Debug\ResGen.write.1.tlog

@@ -1,0 +1,13 @@
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\SaxonTest_1\SaxonTest_1\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\SaxonTest_1\SaxonTest_1\obj\Debug\SaxonTest_1.csproj.GenerateResource.Cache
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\SaxonTest_1\SaxonTest_1\bin\Debug\saxon9api.dll
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\SaxonTest_1\SaxonTest_1\bin\Debug\saxon9.dll
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\SaxonTest_1\SaxonTest_1\bin\Debug\IKVM.Runtime.dll
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\SaxonTest_1\SaxonTest_1\bin\Debug\IKVM.OpenJDK.ClassLibrary.dll
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\SaxonTest_1\SaxonTest_1\bin\Debug\saxon9api.netmodule
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\SaxonTest_1\SaxonTest_1\obj\Debug\Antilles.Properties.Resources.resources
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\SaxonTest_1\SaxonTest_1\bin\Debug\Antilles.exe
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\SaxonTest_1\SaxonTest_1\bin\Debug\Antilles.pdb
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\SaxonTest_1\SaxonTest_1\obj\Debug\Antilles.exe
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\SaxonTest_1\SaxonTest_1\obj\Debug\Antilles.pdb
+C:\Dokumente und Einstellungen\goertz\Eigene Dateien\Visual Studio 2008\Projects\SaxonTest_1\SaxonTest_1\obj\Debug\Antilles.Hauptfenster.resources

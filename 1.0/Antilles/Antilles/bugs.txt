@@ -1,0 +1,25 @@
+------------
+BUGS/Features 
+------------
+
+
+1.0.2
+Validierung gefixed
+
+Bugs (werden defintiv für 0.0.7 gefixed):
+
+- Parameter übergeben beim laden der conf.xml (Pipe)
+- Laden der conf.xml füllt zwar die Textboxen, aber nicht die Variablen (Pipe) <-- fixed
+
+
+
+Fixed:
+
+- stylesheet file auch gelockt ==> (serializer ausgelagert)
+- xsl:message inhalt wenn terminate="yes" <- fixed
+  (Dynamic error:...)
+- clear button auf XSLT Pipe tab <- drin
+- out datei gelockt <-- fixed
+- wellformed check optional <-- done
+- Parameter parse error <-- fixed
+  SimpleContentConstructor(((document($path, .)/child::element(config, xs:anyType))/child::element(payerXML, xs:anyType)), " ")

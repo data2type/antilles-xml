@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{27B16DCE-0466-4EE3-87F7-68D18B855D1C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Antilles</RootNamespace>
+    <AssemblyName>Antilles</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IKVM.OpenJDK.ClassLibrary, Version=0.36.0.11, Culture=neutral, PublicKeyToken=13235d27fcbfff58">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Saxon\9.1.0.8\bin\IKVM.OpenJDK.ClassLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0" />
+    <Reference Include="saxon9api, Version=9.1.0.8, Culture=neutral, PublicKeyToken=e1fdd002d5083fe6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Saxon\9.1.0.8\bin\saxon9api.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help\AntillesEigenschaften.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help\AntillesEigenschaften.Designer.cs">
+      <DependentUpon>AntillesEigenschaften.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WordML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WordML.Designer.cs">
+      <DependentUpon>WordML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Infos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Infos.Designer.cs">
+      <DependentUpon>Infos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klassen\config.cs" />
+    <Compile Include="Forms\Eigenschaften.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eigenschaften.Designer.cs">
+      <DependentUpon>Eigenschaften.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Hauptfenster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Hauptfenster.Designer.cs">
+      <DependentUpon>Hauptfenster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klassen\hotfolder.cs" />
+    <Compile Include="Klassen\parameter.cs" />
+    <Compile Include="Klassen\Program.cs" />
+    <Compile Include="Klassen\tests.cs" />
+    <Compile Include="Forms\ParameterFenster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ParameterFenster.Designer.cs">
+      <DependentUpon>ParameterFenster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klassen\word2generic.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help\AntillesEigenschaften.resx">
+      <DependentUpon>AntillesEigenschaften.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eigenschaften.resx">
+      <DependentUpon>Eigenschaften.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WordML.resx">
+      <DependentUpon>WordML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Hauptfenster.resx">
+      <DependentUpon>Hauptfenster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Infos.resx">
+      <DependentUpon>Infos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ParameterFenster.resx">
+      <DependentUpon>ParameterFenster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Stylesheets\vorprozess1.xsl" />
+    <EmbeddedResource Include="Stylesheets\vorprozess2.xsl">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stylesheets\vorprozess3.xsl">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stylesheets\vorprozess4.xsl" />
+    <EmbeddedResource Include="Stylesheets\vorprozess5.xsl" />
+    <None Include="Help\.DS_Store" />
+    <None Include="Help\files\.DS_Store" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Klassen\schematron.cs" />
+    <Compile Include="Klassen\transformer.cs" />
+    <Compile Include="Klassen\validator.cs" />
+    <Compile Include="Klassen\xproc.cs" />
+    <Compile Include="Klassen\xslformater.cs" />
+    <Compile Include="Klassen\xsltpipe.cs" />
+    <Compile Include="Forms\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Stylesheets\pre.xsl" />
+    <EmbeddedResource Include="Stylesheets\vorprozess6.xsl" />
+    <EmbeddedResource Include="Stylesheets\vorprozess7.xsl" />
+    <EmbeddedResource Include="Stylesheets\vorprozess8.xsl" />
+    <None Include="app.config" />
+    <None Include="lib\calabash\bla.xpl" />
+    <None Include="lib\calabash\docs\BUGS" />
+    <None Include="lib\calabash\docs\ChangeLog" />
+    <None Include="lib\calabash\docs\NOTICES" />
+    <None Include="lib\calabash\lib\saxon\saxon-license.lic" />
+    <None Include="lib\calabash\README" />
+    <None Include="lib\calabash\run-calabash.bat" />
+    <None Include="lib\calabash\schemas\configuration.rnc" />
+    <None Include="lib\calabash\xpl\pipe.xpl" />
+    <None Include="lib\calabash\xpl\submit-test-report.xpl" />
+    <None Include="lib\fop-0.95\conf\fop.xconf" />
+    <None Include="Gfx\buttons\file.png" />
+    <None Include="Gfx\buttons\folder_table.png" />
+    <None Include="Gfx\buttons\target.png" />
+    <None Include="Gfx\buttons\stylesheet.png" />
+    <None Include="Gfx\buttons\ordner.png" />
+    <None Include="Gfx\buttons\save.png" />
+    <None Include="Gfx\buttons\add.png" />
+    <None Include="Gfx\buttons\go.png" />
+    <None Include="Gfx\buttons\settings.png" />
+    <None Include="Gfx\buttons\load.png" />
+    <None Include="Gfx\buttons\clear.png" />
+    <None Include="Gfx\buttons\remove.png" />
+    <None Include="Gfx\buttons\closecross.png" />
+    <None Include="Gfx\buttons\stop.png" />
+    <None Include="Gfx\splash.png" />
+    <Content Include="Help\files\gfx\cals2html.png" />
+    <Content Include="Help\files\gfx\einzeltrans.png" />
+    <Content Include="Help\files\gfx\hotfolder.png" />
+    <Content Include="Help\files\gfx\log.png" />
+    <Content Include="Help\files\gfx\ordnertrans.png" />
+    <Content Include="Help\files\gfx\pipelinetrans.png" />
+    <Content Include="Help\files\gfx\schemabericht.png" />
+    <Content Include="Help\files\gfx\schematron.png" />
+    <Content Include="Help\files\gfx\validierung.png" />
+    <Content Include="Help\files\gfx\xmldarstellen.png" />
+    <Content Include="Help\files\gfx\xproc.png" />
+    <Content Include="Help\files\gfx\xslfo.png" />
+    <Content Include="Help\files\help.css" />
+    <Content Include="Help\files\help.js" />
+    <Content Include="Help\files\jquery-1.3.2.min.js" />
+    <Content Include="Help\files\logo.png" />
+    <Content Include="Help\help_de.html" />
+    <Content Include="Help\help_de_cals2html.html" />
+    <Content Include="Help\help_de_log.html" />
+    <Content Include="Help\help_de_schemabericht.html" />
+    <Content Include="Help\help_de_schematron.html" />
+    <Content Include="Help\help_de_validierungen.html" />
+    <Content Include="Help\help_de_xmlsyntax.html" />
+    <Content Include="Help\help_de_xproc.html" />
+    <Content Include="Help\help_de_xslfo.html" />
+    <Content Include="Help\help_de_xslt_einzel.html" />
+    <Content Include="Help\help_de_xslt_hotfolder.html" />
+    <Content Include="Help\help_de_xslt_ordner.html" />
+    <Content Include="Help\help_de_xslt_pipe.html" />
+    <Content Include="lib\fop-0.95\fop" />
+    <Content Include="lib\fop-0.95\fop.bat" />
+    <Content Include="lib\fop-0.95\KEYS" />
+    <Content Include="lib\fop-0.95\LICENSE" />
+    <Content Include="lib\fop-0.95\NOTICE" />
+    <Content Include="lib\fop-0.95\README" />
+    <None Include="lib\schematron\sch-messages-de.xhtml" />
+    <None Include="lib\schematron\sch-messages-en.xhtml" />
+    <None Include="lib\schematron\sch-messages-fr.xhtml" />
+    <Content Include="lib\schematron\schema\schema1.sch" />
+    <Content Include="lib\schematron\schema\schema2.sch" />
+    <None Include="lib\xs3p\CHANGES" />
+    <None Include="lib\xs3p\examples\address.xsd" />
+    <None Include="lib\xs3p\examples\ipo.xsd" />
+    <None Include="lib\xs3p\examples\po.xsd" />
+    <None Include="lib\xs3p\examples\recursion.xsd" />
+    <None Include="lib\xs3p\examples\report.xsd" />
+    <None Include="lib\xs3p\examples\test_msxsl.bat" />
+    <None Include="lib\xs3p\examples\test_xalanj.bat" />
+    <None Include="lib\xs3p\examples\test_xsltproc.sh" />
+    <None Include="lib\xs3p\examples\xml.xsd" />
+    <None Include="lib\xs3p\examples\XMLSchema.xsd" />
+    <None Include="lib\xs3p\links.dtd" />
+    <None Include="lib\xs3p\links.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gfx\buttons\exit.png" />
+    <None Include="Gfx\buttons\choosen.png" />
+    <None Include="Gfx\buttons\config.png" />
+    <None Include="Gfx\buttons\about.png" />
+    <None Include="Gfx\buttons\help.png" />
+    <None Include="Gfx\buttons\saxon_settings.png" />
+    <None Include="Gfx\data2type_Icon_rgb-2.ico" />
+    <Content Include="lib\calabash\docs\CDDL+GPL.txt" />
+    <Content Include="lib\calabash\docs\GPL.txt" />
+    <Content Include="lib\calabash\lib\apache-commons-codec\commons-codec-1.3.jar" />
+    <Content Include="lib\calabash\lib\apache-commons-http-client\commons-httpclient-3.1.jar" />
+    <Content Include="lib\calabash\lib\apache-commons-logging\commons-logging-1.1.1.jar" />
+    <Content Include="lib\calabash\lib\calabash\calabash.jar" />
+    <Content Include="lib\calabash\lib\saxon\saxon9-dom.jar" />
+    <Content Include="lib\calabash\lib\saxon\saxon9-dom4j.jar" />
+    <Content Include="lib\calabash\lib\saxon\saxon9-jdom.jar" />
+    <Content Include="lib\calabash\lib\saxon\saxon9-s9api.jar" />
+    <Content Include="lib\calabash\lib\saxon\saxon9-sql.jar" />
+    <Content Include="lib\calabash\lib\saxon\saxon9-xom.jar" />
+    <Content Include="lib\calabash\lib\saxon\saxon9-xpath.jar" />
+    <Content Include="lib\calabash\lib\saxon\saxon9-xqj.jar" />
+    <Content Include="lib\calabash\lib\saxon\saxon9.jar" />
+    <Content Include="lib\calabash\lib\saxon\saxon9sa-jaxp.jar" />
+    <Content Include="lib\calabash\lib\saxon\saxon9sa-qc.jar" />
+    <Content Include="lib\calabash\lib\saxon\saxon9sa.jar" />
+    <None Include="lib\calabash\Neu Textdokument.txt" />
+    <Content Include="lib\cals2html\CALS2HTML.xsl" />
+    <Content Include="lib\fop-0.95\build\fop.jar" />
+    <Content Include="lib\fop-0.95\lib\avalon-framework-4.2.0.jar" />
+    <Content Include="lib\fop-0.95\lib\avalon-framework.LICENSE.txt" />
+    <Content Include="lib\fop-0.95\lib\avalon-framework.NOTICE.TXT" />
+    <Content Include="lib\fop-0.95\lib\batik-all-1.7.jar" />
+    <Content Include="lib\fop-0.95\lib\batik.LICENSE.txt" />
+    <Content Include="lib\fop-0.95\lib\batik.NOTICE.txt" />
+    <Content Include="lib\fop-0.95\lib\commons-io-1.3.1.jar" />
+    <Content Include="lib\fop-0.95\lib\commons-io.LICENSE.txt" />
+    <Content Include="lib\fop-0.95\lib\commons-io.NOTICE.txt" />
+    <Content Include="lib\fop-0.95\lib\commons-logging-1.0.4.jar" />
+    <Content Include="lib\fop-0.95\lib\commons-logging.LICENSE.txt" />
+    <Content Include="lib\fop-0.95\lib\commons-logging.NOTICE.txt" />
+    <Content Include="lib\fop-0.95\lib\README.txt" />
+    <Content Include="lib\fop-0.95\lib\serializer-2.7.0.jar" />
+    <Content Include="lib\fop-0.95\lib\serializer.LICENSE.txt" />
+    <Content Include="lib\fop-0.95\lib\serializer.NOTICE.txt" />
+    <Content Include="lib\fop-0.95\lib\xalan-2.7.0.jar" />
+    <Content Include="lib\fop-0.95\lib\xalan.BCEL.LICENSE.txt" />
+    <Content Include="lib\fop-0.95\lib\xalan.LICENSE.txt" />
+    <Content Include="lib\fop-0.95\lib\xalan.NOTICE.txt" />
+    <Content Include="lib\fop-0.95\lib\xalan.regexp.LICENSE.txt" />
+    <Content Include="lib\fop-0.95\lib\xalan.runtime.LICENSE.txt" />
+    <Content Include="lib\fop-0.95\lib\xerces.LICENSE.txt" />
+    <Content Include="lib\fop-0.95\lib\xercesImpl-2.7.1.jar" />
+    <Content Include="lib\fop-0.95\lib\xercesImpl.LICENSE.txt" />
+    <Content Include="lib\fop-0.95\lib\xercesImpl.NOTICE.txt" />
+    <Content Include="lib\fop-0.95\lib\xml-apis-1.3.04.jar" />
+    <Content Include="lib\fop-0.95\lib\xml-apis-ext-1.3.04.jar" />
+    <Content Include="lib\fop-0.95\lib\xml-apis-ext.LICENSE.dom-documentation.txt" />
+    <Content Include="lib\fop-0.95\lib\xml-apis-ext.LICENSE.dom-software.txt" />
+    <Content Include="lib\fop-0.95\lib\xml-apis-ext.LICENSE.sac.html" />
+    <Content Include="lib\fop-0.95\lib\xml-apis-ext.LICENSE.txt" />
+    <Content Include="lib\fop-0.95\lib\xml-apis-ext.NOTICE.txt" />
+    <Content Include="lib\fop-0.95\lib\xml-apis-ext.README.dom.txt" />
+    <Content Include="lib\fop-0.95\lib\xml-apis.LICENSE-SAX.html" />
+    <Content Include="lib\fop-0.95\lib\xml-apis.LICENSE.DOM-documentation.html" />
+    <Content Include="lib\fop-0.95\lib\xml-apis.LICENSE.DOM-software.html" />
+    <Content Include="lib\fop-0.95\lib\xml-apis.LICENSE.txt" />
+    <Content Include="lib\fop-0.95\lib\xml-apis.NOTICE.txt" />
+    <Content Include="lib\fop-0.95\lib\xmlgraphics-commons-1.3.1.jar" />
+    <Content Include="lib\fop-0.95\lib\xmlgraphics-commons.LICENSE.txt" />
+    <Content Include="lib\fop-0.95\lib\xmlgraphics-commons.NOTICE.txt" />
+    <Content Include="lib\fop-0.95\status.xml" />
+    <Content Include="lib\schematron\html.xsl" />
+    <Content Include="lib\schematron\iso_abstract_expand.xsl" />
+    <Content Include="lib\schematron\iso_dsdl_include.xsl" />
+    <Content Include="lib\schematron\iso_schematron_message_xslt2.xsl" />
+    <Content Include="lib\schematron\iso_schematron_skeleton_for_saxon.xsl" />
+    <Content Include="lib\schematron\iso_svrl_for_xslt2.xsl" />
+    <Content Include="lib\schematron\readme.txt" />
+    <Content Include="lib\schematron\schema\theSchema.xsl" />
+    <Content Include="lib\schematron\SvrlReportText.xslt" />
+    <Content Include="lib\XMLbericht\xmlverbatim.css" />
+    <Content Include="lib\XMLbericht\xmlverbatim.xsl" />
+    <Content Include="lib\XMLbericht\xmlverbatimwrapper.xsl" />
+    <Content Include="lib\xs3p\default.html" />
+    <Content Include="lib\xs3p\examples\build.xml" />
+    <Content Include="lib\xs3p\examples\links.xml" />
+    <Content Include="lib\xs3p\LICENSE.html" />
+    <Content Include="lib\xs3p\README.txt" />
+    <Content Include="lib\xs3p\xs3p.xsl" />
+    <Content Include="lib\xs3p\xs3p_links.xsl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

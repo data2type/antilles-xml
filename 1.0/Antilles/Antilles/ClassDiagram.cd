@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Antilles.config" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IHgSAJAkIpAUAQACkABAgkAkUKDEAAFggJClgCSNyIQ=</HashCode>
+      <FileName>Klassen\config.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.xsltpipe" Collapsed="true">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgAAAAAAAEAATAAEAQAAAQAAAIAQgABAAAAQACEQABg=</HashCode>
+      <FileName>Klassen\xsltpipe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.parameter" Collapsed="true">
+    <Position X="4" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAACAAAAAAAAAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+      <FileName>Klassen\parameter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.Program" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQgAiAAAAQAAEAABCAAAAMIAAAAAAAAEBAFAAgA=</HashCode>
+      <FileName>Klassen\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.schematron" Collapsed="true">
+    <Position X="2.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAwAMBAAAAAAEAAAAEACAiSIEAABAIEAAgAAAACA=</HashCode>
+      <FileName>Klassen\schematron.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.tests" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Klassen\tests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.transformer" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhAAAABIAAAAAAQAAACCAAAAAAAAABAAAAAAAAEgA=</HashCode>
+      <FileName>Klassen\transformer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.validator" Collapsed="true">
+    <Position X="2.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAABAAAAAAAAAAAAIEAQAACAAAAAAAEAAADAAAAAAA=</HashCode>
+      <FileName>Klassen\validator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.xproc" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAEAAAAAAAACAAAAAAAAAAAAABACAAAIAA=</HashCode>
+      <FileName>Klassen\xproc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.xslformater" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAEEAAAAAAAgCAAgAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Klassen\xslformater.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.Hauptfenster" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>u1993Xj8jW7/hj2+GjO6OHzXs8+aY7/pXt3i535PPf8=</HashCode>
+      <FileName>Hauptfenster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.pipetarget" Collapsed="true">
+    <Position X="4" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAgAAAAAABAAAAAQQAAAAEAAAAAAAA=</HashCode>
+      <FileName>Hauptfenster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.hotfolder" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAABAAEAAAABAAEAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Klassen\hotfolder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.About" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAECBAAAQAAAAAAAIAAAAAA=</HashCode>
+      <FileName>About.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.AntillesEigenschaften" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIBAAACCAgAACAACAAAUDBAAIIQAAAAwAAAAAACA=</HashCode>
+      <FileName>AntillesEigenschaften.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.Eigenschaften" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAYIoRQGCAgwMESoQHIYgEKBUAAaAAEUCAQEBIQgEw=</HashCode>
+      <FileName>Eigenschaften.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.Help" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAECBAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Help.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.ParameterFenster" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAEAACAAAAAgAACAAAECBAAAAABAAAAACgAAAQA=</HashCode>
+      <FileName>ParameterFenster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Antilles.Splash" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAICAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Splash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
