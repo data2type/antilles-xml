@@ -139,8 +139,8 @@ namespace antillesXMLv2
             Program.Config.parameters.Add(Item_Seperator);
 
             parameter Item_CSV = new parameter();
-            Item_CSV.param = "!csv";
-            Item_CSV.value = Program.Config.input;
+            Item_CSV.param = "csv";
+            Item_CSV.value = "file:\\" + Program.Config.input;
             Program.Config.parameters.Add(Item_CSV);            
 
             string input = Path.Combine(Application.StartupPath, "lib\\input.xml");

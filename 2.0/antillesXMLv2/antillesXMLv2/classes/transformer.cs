@@ -521,7 +521,9 @@ namespace antillesXMLv2
                 XdmAtomicValue val = new XdmAtomicValue(Program.Config.parameters[i].value);
                 QName param = new QName("", "", Program.Config.parameters[i].param);
 
+
                 transformer.SetParameter(param, val);
+                
 
 
             }

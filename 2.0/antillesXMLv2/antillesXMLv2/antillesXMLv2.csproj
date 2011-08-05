@@ -207,6 +207,7 @@
     <None Include="gfx\antillesXMLSplash.png" />
     <None Include="gfx\about_info.png" />
     <None Include="gfx\success.png" />
+    <Content Include="lib\input.xml" />
     <Content Include="lib\xs3p\default.html" />
     <Content Include="lib\xs3p\examples\build.xml" />
     <Content Include="lib\xs3p\examples\links.xml" />

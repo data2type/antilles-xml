@@ -40,12 +40,16 @@ namespace antillesXMLv2
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            listBox2.Items.Clear();
-            Entry ent = (Entry)listBox1.SelectedItem;
-            for (int i = 0; i < ent.features.Count; i++)
+            try
             {
-                listBox2.Items.Add(ent.features[i]);
+                listBox2.Items.Clear();
+                Entry ent = (Entry)listBox1.SelectedItem;
+                for (int i = 0; i < ent.features.Count; i++)
+                {
+                    listBox2.Items.Add(ent.features[i]);
+                }
             }
+            catch (Exception) { }
         }
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
