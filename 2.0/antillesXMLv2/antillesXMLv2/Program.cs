@@ -52,8 +52,7 @@ namespace antillesXMLv2
 
         /// <summary>
         /// Global static Classes
-        /// </summary>
-
+        /// </summary>       
 
         public static Mainframe mainframe = new Mainframe();
 
@@ -61,6 +60,12 @@ namespace antillesXMLv2
         static void Main()
         {
             Application.EnableVisualStyles();
+
+
+            splash.Show();
+            Application.DoEvents();
+            
+           
 
             if (Properties.Settings.Default.Historie.Count > 30)
             {
@@ -166,9 +171,12 @@ namespace antillesXMLv2
             string location = Application.StartupPath;
             Environment.SetEnvironmentVariable("SAXON_HOME", location);
 
+            System.Threading.Thread.Sleep(2000);
 
+            splash.Hide();
             //   Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(mainframe);
         }
+       
     }
 }

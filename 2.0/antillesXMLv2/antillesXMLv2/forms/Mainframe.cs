@@ -17,22 +17,16 @@ namespace antillesXMLv2
             InitializeComponent();          
 
             int breite = this.Size.Width;
-            double placeLeft = (5 * breite) / 100;
-            double placeRight = (70 * breite) / 100;
+            double placeLeft = (2 * breite) / 100;
+            double placeRight = (75 * breite) / 100;
 
             Program.wizard.TopLevel = false;
-            this.Controls.Add(Program.wizard);
+            this.Controls.Add(Program.wizard);            
             Program.wizard.Top = 90;
-            Program.wizard.Left = (breite / 2) - 200;           
+            Program.wizard.Left = (breite / 2) - 200;
+            Program.wizard.Show();            
 
-            Program.splash.TopLevel = false;
-            this.Controls.Add(Program.splash);
-            Program.splash.Top = 90;
-            Program.splash.Left = (breite / 2) - 180;
-            Program.splash.Show();
-            Program.splash.BringToFront();
-
-            // loading the forms
+            
             Program.xslt.TopLevel = false;
             this.Controls.Add(Program.xslt);
             Program.xslt.Top = 50;

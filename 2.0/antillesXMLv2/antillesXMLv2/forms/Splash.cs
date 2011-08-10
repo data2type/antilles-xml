@@ -18,9 +18,7 @@ namespace antillesXMLv2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Program.wizard.Show();
-            Program.wizard.BringToFront();
-            this.Close();
+           //
         }
     }
 }
