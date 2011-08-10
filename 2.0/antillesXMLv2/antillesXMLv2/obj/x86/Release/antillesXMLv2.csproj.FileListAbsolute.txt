@@ -57,10 +57,11 @@ C:\Users\Tobias J. Goertz\documents\visual studio 2010\Projects\antillesXMLv2\an
 C:\Users\Tobias J. Goertz\documents\visual studio 2010\Projects\antillesXMLv2\antillesXMLv2\obj\x86\Release\GenerateResource.write.1.tlog
 C:\Users\Tobias J. Goertz\documents\visual studio 2010\Projects\antillesXMLv2\antillesXMLv2\obj\x86\Release\antillesXMLv2.exe
 C:\Users\Tobias J. Goertz\documents\visual studio 2010\Projects\antillesXMLv2\antillesXMLv2\obj\x86\Release\antillesXMLv2.pdb
-C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\2.0\antillesXMLv2\antillesXMLv2\obj\x86\Release\antillesXMLv2.exe
-C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\2.0\antillesXMLv2\antillesXMLv2\obj\x86\Release\antillesXMLv2.pdb
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\2.0\antillesXMLv2\antillesXMLv2\bin\Release\antillesXMLv2.exe.config
 C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\2.0\antillesXMLv2\antillesXMLv2\bin\Release\antillesXMLv2.exe
 C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\2.0\antillesXMLv2\antillesXMLv2\bin\Release\antillesXMLv2.pdb
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\2.0\antillesXMLv2\antillesXMLv2\bin\Release\IKVM.OpenJDK.Core.dll
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\2.0\antillesXMLv2\antillesXMLv2\bin\Release\saxon9ee-api.dll
 C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\2.0\antillesXMLv2\antillesXMLv2\obj\x86\Release\ResolveAssemblyReference.cache
 C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\2.0\antillesXMLv2\antillesXMLv2\obj\x86\Release\antillesXMLv2.Splash.resources
 C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\2.0\antillesXMLv2\antillesXMLv2\obj\x86\Release\antillesXMLv2.About.resources
@@ -87,3 +88,5 @@ C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\2.0\
 C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\2.0\antillesXMLv2\antillesXMLv2\obj\x86\Release\antillesXMLv2.Properties.Resources.resources
 C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\2.0\antillesXMLv2\antillesXMLv2\obj\x86\Release\GenerateResource.read.1.tlog
 C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\2.0\antillesXMLv2\antillesXMLv2\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\2.0\antillesXMLv2\antillesXMLv2\obj\x86\Release\antillesXMLv2.exe
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\2.0\antillesXMLv2\antillesXMLv2\obj\x86\Release\antillesXMLv2.pdb

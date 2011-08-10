@@ -51,7 +51,7 @@ namespace antillesXMLv2
                 RedirectStdErr(meinlog);
                 
                 // Create a Processor instance.
-                Processor processor = new Processor(true);
+                Processor processor = new Processor(true); 
 
                 // die abfrage der einstellungen 
                 processor = checkSettings(processor);

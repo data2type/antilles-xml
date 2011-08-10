@@ -1,22 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using Saxon.Api;
 using System.IO;
-using System.Collections;
-using System.Xml;
-using System.Xml.Schema;
-using System.Xml.Serialization;
-using System.Net;
-using System.Text.RegularExpressions;
-using System.Diagnostics;
-using System.Threading;
-using System.Reflection;  
+using System.Web;
 
 
 namespace antillesXMLv2
@@ -135,12 +120,15 @@ namespace antillesXMLv2
             Program.Config.parameters.Clear();
             parameter Item_Seperator = new parameter();
             Item_Seperator.param = "separator";
-            Item_Seperator.value = @comboBox.Text;
+            Item_Seperator.value = comboBox.Text;
             Program.Config.parameters.Add(Item_Seperator);
-
+           
             parameter Item_CSV = new parameter();
             Item_CSV.param = "csv";
-            Item_CSV.value = "file:\\" + Program.Config.input;
+            string inputStr = Program.Config.input;
+            inputStr = inputStr.Replace("\\", "/");
+            Item_CSV.value = @"file:/" + @inputStr;
+
             Program.Config.parameters.Add(Item_CSV);            
 
             string input = Path.Combine(Application.StartupPath, "lib\\input.xml");

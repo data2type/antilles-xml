@@ -163,6 +163,8 @@ namespace antillesXMLv2
                 csv2xml.setTextboxRange();
             }
 
+            string location = Application.StartupPath;
+            Environment.SetEnvironmentVariable("SAXON_HOME", location);
 
 
             //   Application.SetCompatibleTextRenderingDefault(false);
