@@ -87,6 +87,9 @@ namespace antillesXMLv2
                     Program.Config.input = open.FileName;
                     Program.Config.parameterIsSet = false;
 
+                    //vorschlag für result
+                    comboBox_target.Text = Program.Config.input + "_result.html";
+
                 }
             }
             catch (Exception)
@@ -135,28 +138,10 @@ namespace antillesXMLv2
                 || Program.Config.target == ""
                 || Program.Config.input == ""
                 ) { Program.plsW.Hide(); return; }
-
         
-            // transform
-            string fileName = Path.Combine(Application.StartupPath, "lib\\syntaxhighlighting\\");
-            string xmldarstellen = fileName + "xmlverbatimwrapper.xsl";
-            string css = fileName + "xmlverbatim.css";
 
-            FileInfo fi = new FileInfo(Program.Config.target);
-            string target = fi.DirectoryName + "\\xmlverbatim.css";
-
-            Program.transform.starteProzessor(Program.Config.input, xmldarstellen, Program.Config.target);
-
-            try
-            {
-                File.Copy(css, target, true);
-            }
-            catch (Exception)
-            {
-
-                // hier passiert nichts ... 
-
-            }
+            //transform
+            Program.transform.starteProzessor(Program.Config.input, "xmlVisual", Program.Config.target, true);             
 
             // Im Browser anzeigen?
             try

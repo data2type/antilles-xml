@@ -53,9 +53,9 @@
             this.label_intro.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_intro.Location = new System.Drawing.Point(9, 69);
             this.label_intro.Name = "label_intro";
-            this.label_intro.Size = new System.Drawing.Size(171, 16);
+            this.label_intro.Size = new System.Drawing.Size(168, 16);
             this.label_intro.TabIndex = 1;
-            this.label_intro.Text = "Please choose a Feature";
+            this.label_intro.Text = "Please choose a feature";
             // 
             // listBox2
             // 

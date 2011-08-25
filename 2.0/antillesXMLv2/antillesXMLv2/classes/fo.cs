@@ -100,7 +100,7 @@ namespace antillesXMLv2
                             catch (Exception ex)
                             {
 
-                                Program.results.loadText_log("Probleme beim fo files entfernen" + ex.Message);                                
+                                Program.results.loadText_log("Problems with removing fo files" + ex.Message);                                
 
                             }
 
@@ -129,8 +129,8 @@ namespace antillesXMLv2
                             }
                             else 
                             {
-                                MessageBox.Show("Konnte die Datei XSLCmd.exe nicht finden", "File not found", MessageBoxButtons.OK);                                
-                                Properties.Settings.Default.AntennahouseLocation = "leer";
+                                MessageBox.Show("Couldnt find the Antenna House File", "File not found", MessageBoxButtons.OK);
+                                Properties.Settings.Default.AntennahouseLocation = "empty";
                                 return;  
                             }
                             
@@ -145,8 +145,8 @@ namespace antillesXMLv2
                             }
                             else 
                             {
-                                MessageBox.Show("Konnte die Datei xep.bat nicht finden", "File not found", MessageBoxButtons.OK);
-                                Properties.Settings.Default.RenderXLocation = "leer";
+                                MessageBox.Show("Couldnt find the RenderX File", "File not found", MessageBoxButtons.OK);
+                                Properties.Settings.Default.RenderXLocation = "empty";
                                 return; 
                             }
                             break;
@@ -162,7 +162,7 @@ namespace antillesXMLv2
                         catch (Exception ex)
                         {
 
-                            Program.results.loadText_log("Probleme beim fo files entfernen" + ex.Message);
+                            Program.results.loadText_log("Problems with removing fo files" + ex.Message);
 
                         }                    
                     

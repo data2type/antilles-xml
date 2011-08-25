@@ -1,21 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using Saxon.Api;
 using System.IO;
-using System.Collections;
-using System.Xml;
-using System.Xml.Schema;
-using System.Xml.Serialization;
-using System.Net;
-using System.Text.RegularExpressions;
-using System.Threading;
 
 namespace antillesXMLv2
 {
@@ -93,14 +80,34 @@ namespace antillesXMLv2
                 if (result == DialogResult.Cancel) { return; }
                 else
                 {
+                    bool exitsflag = false;
+                    string filename = "";
                     try
                     {
                         FolderBrowserDialog open = new FolderBrowserDialog();
 
                         if (open.ShowDialog() == DialogResult.OK)
                         {
-                            Properties.Settings.Default.AntennahouseLocation = open.SelectedPath;
-                            Properties.Settings.Default.AntennahouseLocation += "\\XSLCmd.exe";
+                            Properties.Settings.Default.AntennahouseLocation = open.SelectedPath;                         
+                            filename = Properties.Settings.Default.AntennahouseLocation + "\\XSLCmd.exe";
+
+                            if (File.Exists(filename))
+                            {
+                                Properties.Settings.Default.AntennahouseLocation += "\\XSLCmd.exe";
+                                exitsflag = true;
+                            }
+                            else 
+                            {
+
+                                filename = Properties.Settings.Default.AntennahouseLocation + "\\AHFCmd.exe";
+                                if (File.Exists(filename))
+                                {
+                                    Properties.Settings.Default.AntennahouseLocation += "\\AHFCmd.exe";
+                                    exitsflag = true;
+                                }
+                            
+                            }                          
+
                         }
                     }
                     catch (Exception)
@@ -109,14 +116,14 @@ namespace antillesXMLv2
                         //setLogTxt("Sie müssen einen Ordner angeben");               
                     }
 
-                    if (File.Exists(Properties.Settings.Default.AntennahouseLocation))
+                    if (exitsflag)
                     {
                         Properties.Settings.Default.FoFormatierer = "antennahouse";
                     }
                     else
                     {
-                        MessageBox.Show("Can´t find File XSLCmd.exe", "File not found", MessageBoxButtons.OK);
-                        Properties.Settings.Default.AntennahouseLocation = "leer";
+                        MessageBox.Show("Can´t find File XSLCmd.exe or AHFCmd.exe ", "File not found", MessageBoxButtons.OK);
+                        Properties.Settings.Default.AntennahouseLocation = "empty";
                     }
                 }
             }
@@ -203,6 +210,9 @@ namespace antillesXMLv2
                     comboBox_input.Text = open.FileName;
                     Program.Config.input = open.FileName;
 
+                    //vorschlag für result
+                    comboBox_target.Text = Program.Config.input + "_result.pdf";
+
                 }
             }
             catch (Exception)
@@ -265,6 +275,12 @@ namespace antillesXMLv2
             Program.plsW.Update();
             Program.plsW.BringToFront();
 
+            // take textboxes as final entry
+            if (Program.Config.input != comboBox_input.Text) Program.Config.input = @comboBox_input.Text;
+            if (Program.Config.stylesheet != comboBox_stylesheet.Text) Program.Config.stylesheet = @comboBox_stylesheet.Text;
+            if (Program.Config.target != comboBox_target.Text) Program.Config.target = @comboBox_target.Text;
+             
+
             // simple error check
             if (Program.Config.input == null
                 || Program.Config.stylesheet == null
@@ -274,12 +290,7 @@ namespace antillesXMLv2
                 || Program.Config.target == ""
                 ) { Program.plsW.Hide(); return; }
 
-            // take textboxes as final entry
-            if (Program.Config.input != comboBox_input.Text) Program.Config.input = @comboBox_input.Text;
-            if (Program.Config.stylesheet != comboBox_stylesheet.Text) Program.Config.stylesheet = @comboBox_stylesheet.Text;
-            if (Program.Config.target != comboBox_target.Text) Program.Config.target = @comboBox_target.Text;
-             
-
+       
             // do your work
             string[] fofile = { "" };
             // 1. Schritt: Transformieren zu FO

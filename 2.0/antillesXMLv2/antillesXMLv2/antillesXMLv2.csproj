@@ -214,6 +214,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="styles\xmlVisual.xsl" />
     <EmbeddedResource Include="forms\Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
@@ -526,7 +527,6 @@
     <Content Include="lib\calabash\lib\saxon\saxon9sa-jaxp.jar" />
     <Content Include="lib\calabash\lib\saxon\saxon9sa-qc.jar" />
     <Content Include="lib\calabash\lib\saxon\saxon9sa.jar" />
-    <Content Include="lib\calabash\Neu Textdokument.txt" />
     <Content Include="lib\fop\build\fop.jar" />
     <Content Include="lib\fop\fop.js" />
     <Content Include="lib\fop\lib\avalon-framework-4.2.0.jar" />
@@ -581,9 +581,6 @@
     <Content Include="lib\schematron\readme.txt" />
     <Content Include="lib\schematron\schema\theSchema.xsl" />
     <Content Include="lib\schematron\SvrlReportText.xslt" />
-    <Content Include="lib\syntaxhighlighting\xmlverbatim.css" />
-    <Content Include="lib\syntaxhighlighting\xmlverbatim.xsl" />
-    <Content Include="lib\syntaxhighlighting\xmlverbatimwrapper.xsl" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

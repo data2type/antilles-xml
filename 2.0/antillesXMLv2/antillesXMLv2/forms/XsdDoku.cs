@@ -89,6 +89,9 @@ namespace antillesXMLv2
                     Program.Config.input = open.FileName;
                     Program.Config.parameterIsSet = false;
 
+                    //vorschlag für result
+                    comboBox_target.Text = Program.Config.input + "_result.html";
+
                 }
             }
             catch (Exception)

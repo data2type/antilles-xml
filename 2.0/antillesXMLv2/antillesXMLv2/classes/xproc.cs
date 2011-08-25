@@ -102,11 +102,10 @@ namespace antillesXMLv2
             //log schreiben
             for (int i = 0; i < log.Count; i++)
             {
-               Program.results.loadText_log(log[i]);
+               Program.results.loadText_results(log[i]);
             }
 
-            log.Clear();
-     
+            log.Clear();     
 
         }       
 

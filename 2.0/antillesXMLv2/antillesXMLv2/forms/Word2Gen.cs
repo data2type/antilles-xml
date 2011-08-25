@@ -59,7 +59,7 @@ namespace antillesXMLv2
             {
 
                 OpenFileDialog open = new OpenFileDialog();
-                open.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*";
+                open.Filter = "Word 2003 XML files (*.xml)|*.xml|All files (*.*)|*.*";
 
                 if (open.ShowDialog() == DialogResult.OK)
                 {
@@ -68,6 +68,9 @@ namespace antillesXMLv2
                     comboBox_input.Text = open.FileName;                   
                     Program.Config.input = open.FileName;
                     Program.Config.parameterIsSet = false;
+
+                    //vorschlag für result
+                    comboBox_target.Text = Program.Config.input + "_result.xml";
                     
                 }
             }

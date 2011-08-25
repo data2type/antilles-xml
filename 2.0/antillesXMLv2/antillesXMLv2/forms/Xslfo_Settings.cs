@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
+using System.IO;
 
 namespace antillesXMLv2
 {
@@ -60,25 +57,55 @@ namespace antillesXMLv2
                     break;
 
                 case "antennahouse":
+                    bool exitsflag = false;
+                    string filename = "";
                     try
                     {
-
                         FolderBrowserDialog open = new FolderBrowserDialog();
 
                         if (open.ShowDialog() == DialogResult.OK)
                         {
-
+                            Properties.Settings.Default.AntennahouseLocation = open.SelectedPath;                         
+                            filename = Properties.Settings.Default.AntennahouseLocation + "\\XSLCmd.exe";
                             textBox_formatter.Text = open.SelectedPath;
-                            Properties.Settings.Default.AntennahouseLocation = open.SelectedPath;
-                            Properties.Settings.Default.AntennahouseLocation += "\\XSLCmd.exe";
-                            Properties.Settings.Default.Save();
+
+                            if (File.Exists(filename))
+                            {
+                                Properties.Settings.Default.AntennahouseLocation += "\\XSLCmd.exe";
+                                exitsflag = true;
+                            }
+                            else 
+                            {
+
+                                filename = Properties.Settings.Default.AntennahouseLocation + "\\AHFCmd.exe";
+                                if (File.Exists(filename))
+                                {
+                                    Properties.Settings.Default.AntennahouseLocation += "\\AHFCmd.exe";
+                                    exitsflag = true;
+                                }
+                            
+                            }                          
 
                         }
                     }
                     catch (Exception)
-                    {
+                    {                       
                         //setLogTxt("Sie müssen einen Ordner angeben");               
                     }
+
+                    if (exitsflag)
+                    {
+                        Properties.Settings.Default.FoFormatierer = "antennahouse";
+                    }
+
+                    else
+                    {
+                        MessageBox.Show("Can´t find File XSLCmd.exe or AHFCmd.exe ", "File not found", MessageBoxButtons.OK);
+                        Properties.Settings.Default.AntennahouseLocation = "empty";
+                        textBox_formatter.Text = "empty";
+                    }               
+            
+                    Properties.Settings.Default.Save();
                     break;
 
                 case "fop":                    

@@ -42,7 +42,7 @@ namespace antillesXMLv2.Properties {
 
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("leer")]
+        [global::System.Configuration.DefaultSettingValueAttribute("empty")]
         public string AntennahouseLocation
         {
             get
@@ -57,7 +57,7 @@ namespace antillesXMLv2.Properties {
 
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("leer")]
+        [global::System.Configuration.DefaultSettingValueAttribute("empty")]
         public string RenderXLocation
         {
             get

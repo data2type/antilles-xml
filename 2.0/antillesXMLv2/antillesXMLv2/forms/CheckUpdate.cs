@@ -22,7 +22,7 @@ namespace antillesXMLv2
         private void check()
         {
 
-            string version = GetUrlResponse("http://www.tobiasgoertz.de/ver.txt", null, null);
+            string version = GetUrlResponse("http://www.data2type.de/ver.txt", null, null);
 
             // Fehler
             if (version == "0") { label1.Text = "error";  return; }

@@ -56,7 +56,7 @@ namespace antillesXMLv2
             {
 
                 OpenFileDialog open = new OpenFileDialog();
-                open.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+                open.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
 
                 if (open.ShowDialog() == DialogResult.OK)
                 {
@@ -65,6 +65,9 @@ namespace antillesXMLv2
                     comboBox_input.Text = open.FileName;
                     Program.Config.parameterIsSet = false;
                     Program.Config.input = open.FileName;
+
+                    //vorschlag für result
+                    comboBox_target.Text = Program.Config.input + "_result.xml";
 
                 }
             }

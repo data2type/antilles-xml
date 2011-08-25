@@ -88,6 +88,9 @@ namespace antillesXMLv2
                     Properties.Settings.Default.Historie.Add(open.FileName);
                     Properties.Settings.Default.Save();
 
+                    //vorschlag für result
+                    comboBox_target.Text = Program.Config.input + "_result.xml";
+
                 }
             }
             catch (Exception ex)

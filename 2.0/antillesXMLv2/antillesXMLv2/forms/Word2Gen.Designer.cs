@@ -36,6 +36,7 @@
             this.button_target = new System.Windows.Forms.Button();
             this.button_engage = new System.Windows.Forms.Button();
             this.button_input = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.Single.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_feedback)).BeginInit();
@@ -54,6 +55,7 @@
             // 
             // Single
             // 
+            this.Single.Controls.Add(this.label1);
             this.Single.Controls.Add(this.pictureBox_feedback);
             this.Single.Controls.Add(this.comboBox_target);
             this.Single.Controls.Add(this.comboBox_input);
@@ -99,6 +101,7 @@
             this.comboBox_input.Name = "comboBox_input";
             this.comboBox_input.Size = new System.Drawing.Size(320, 21);
             this.comboBox_input.TabIndex = 34;
+            this.comboBox_input.Text = "Please use a Word 2003 XML File";
             this.comboBox_input.TextChanged += new System.EventHandler(this.disableFeedback);
             // 
             // button_target
@@ -131,6 +134,14 @@
             this.button_input.UseVisualStyleBackColor = true;
             this.button_input.Click += new System.EventHandler(this.button_input_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(31, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 36;
+            // 
             // Word2Gen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,6 +158,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Word2Gen_FormClosing);
             this.tabControl.ResumeLayout(false);
             this.Single.ResumeLayout(false);
+            this.Single.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_feedback)).EndInit();
             this.ResumeLayout(false);
 
@@ -162,5 +174,6 @@
         private System.Windows.Forms.ComboBox comboBox_target;
         private System.Windows.Forms.ComboBox comboBox_input;
         private System.Windows.Forms.PictureBox pictureBox_feedback;
+        private System.Windows.Forms.Label label1;
     }
 }
