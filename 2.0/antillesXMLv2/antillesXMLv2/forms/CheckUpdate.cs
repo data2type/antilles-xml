@@ -80,7 +80,7 @@ namespace antillesXMLv2
             catch (Exception)
             {
 
-                Program.results.loadText_log("No Internet Connection or our Servers are Down. Please try again later.");
+                Program.mainframe.results.loadText_log("No Internet Connection or our Servers are Down. Please try again later.");
 
             }
             return "0";

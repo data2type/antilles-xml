@@ -184,12 +184,15 @@ namespace antillesXMLv2
 
         private void SyntaxHighlighting_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;
-            Program.WINDOW_STATE = true;
-            Program.results.state = false;
-            Program.results.Hide();
-            Program.mainframe.formSwitcher();
-            Program.wizard.Show();
+            if (!Program.QUIT)
+            {
+                e.Cancel = true;
+                Program.WINDOW_STATE = true;
+                Program.mainframe.results.state = false;
+                Program.mainframe.results.Hide();
+                Program.mainframe.formSwitcher();
+                Program.mainframe.wizard.Show();
+            }
         }
 
         private void disableFeedback(object sender, EventArgs e)

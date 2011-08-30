@@ -30,13 +30,13 @@
         {
             this.tabControl = new System.Windows.Forms.TabControl();
             this.Single = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox_feedback = new System.Windows.Forms.PictureBox();
             this.comboBox_target = new System.Windows.Forms.ComboBox();
             this.comboBox_input = new System.Windows.Forms.ComboBox();
             this.button_target = new System.Windows.Forms.Button();
             this.button_engage = new System.Windows.Forms.Button();
             this.button_input = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.Single.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_feedback)).BeginInit();
@@ -70,6 +70,14 @@
             this.Single.Text = "Single";
             this.Single.UseVisualStyleBackColor = true;
             this.Single.Click += new System.EventHandler(this.Single_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(31, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 36;
             // 
             // pictureBox_feedback
             // 
@@ -134,14 +142,6 @@
             this.button_input.UseVisualStyleBackColor = true;
             this.button_input.Click += new System.EventHandler(this.button_input_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 36;
-            // 
             // Word2Gen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,6 +154,7 @@
             this.MinimumSize = new System.Drawing.Size(500, 450);
             this.Name = "Word2Gen";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Word 2 Generic";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Word2Gen_FormClosing);
             this.tabControl.ResumeLayout(false);

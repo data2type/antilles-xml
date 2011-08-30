@@ -108,7 +108,6 @@
             this.Single.TabIndex = 0;
             this.Single.Text = "Single";
             this.Single.UseVisualStyleBackColor = true;
-            this.Single.Click += new System.EventHandler(this.Single_Click);
             // 
             // pictureBox_feedback
             // 
@@ -150,8 +149,11 @@
             this.combobox_input.Location = new System.Drawing.Point(31, 59);
             this.combobox_input.Name = "combobox_input";
             this.combobox_input.Size = new System.Drawing.Size(320, 21);
-            this.combobox_input.TabIndex = 14;
+            this.combobox_input.TabIndex = 0;
+            this.combobox_input.SelectedIndexChanged += new System.EventHandler(this.combobox_input_SelectedIndexChanged);
             this.combobox_input.TextChanged += new System.EventHandler(this.disableFeedback);
+            this.combobox_input.Click += new System.EventHandler(this.combobox_input_Click);
+            this.combobox_input.Enter += new System.EventHandler(this.combobox_input_Enter);
             // 
             // button_target
             // 
@@ -478,6 +480,8 @@
             this.MinimumSize = new System.Drawing.Size(500, 450);
             this.Name = "Xslt";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "XSLT Transformations";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Xslt_FormClosing);
             this.Load += new System.EventHandler(this.Xslt_Load);

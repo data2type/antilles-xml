@@ -113,7 +113,7 @@ namespace antillesXMLv2
                 {
                     //Program.hauptfenster.setStatusTxt("Es gab einen oder mehrere Fehler. Bitte schauen Sie ins Log");                    
                   //  Program.hauptfenster.setLogTxt("Fehler beim hinzufügen des externen Schemas" + schemaUri);
-                   // Program.results.loadText_log(ex.Message);
+                   // Program.mainframe.results.loadText_log(ex.Message);
 
                 }
 
@@ -220,7 +220,7 @@ namespace antillesXMLv2
             catch (Exception ex)
             {
                 //Program.hauptfenster.setStatusTxt("Es gab einen oder mehrere Fehler. Bitte schauen Sie ins Log");                
-                Program.results.loadText_log("Error " + ex.Message);
+                Program.mainframe.results.loadText_log("Error " + ex.Message);
             }
             
 
@@ -230,7 +230,7 @@ namespace antillesXMLv2
                 case XmlValidatorResult.Valid:
                     if (ausgabeflag)
                     {
-                        Program.results.loadText_log("Valid");
+                        Program.mainframe.results.loadText_log("Valid");
                         Program.Config.success = true;
                         //Program.hauptfenster.setLogTxt("Das XML-File ist va");
                     }
@@ -246,12 +246,12 @@ namespace antillesXMLv2
                     if (ausgabeflag)
                     {
                         //Program.hauptfenster.setStatusTxt("Bitte schauen sie ins Log");
-                        Program.results.loadText_log("Warnings: ");
+                        Program.mainframe.results.loadText_log("Warnings: ");
                         
                         for (int i = 0; i < warnings.Count; i++)
                         {
 
-                            Program.results.loadText_log(warnings[i].ToString());
+                            Program.mainframe.results.loadText_log(warnings[i].ToString());
 
                         }
                     }
@@ -265,7 +265,7 @@ namespace antillesXMLv2
                         for (int i = 0; i < warnings.Count; i++)
                         {
 
-                            Program.results.loadText_log(warnings[i].ToString());
+                            Program.mainframe.results.loadText_log(warnings[i].ToString());
 
                         }
                     }
@@ -278,15 +278,15 @@ namespace antillesXMLv2
                         for (int i = 0; i < errors.Count; i++)
                         {
 
-                            Program.results.loadText_log(errors[i].ToString());
+                            Program.mainframe.results.loadText_log(errors[i].ToString());
 
                         }
                         if (warnings.Count > 0)
                         {
-                            Program.results.loadText_log("Following Warnings: ");
+                            Program.mainframe.results.loadText_log("Following Warnings: ");
                             for (int i = 0; i < warnings.Count; i++)
                             {
-                                Program.results.loadText_log(warnings[i].ToString());
+                                Program.mainframe.results.loadText_log(warnings[i].ToString());
                             }
 
                         }
@@ -300,15 +300,15 @@ namespace antillesXMLv2
                         for (int i = 0; i < errors.Count; i++)
                         {
 
-                            Program.results.loadText_log(errors[i].ToString());
+                            Program.mainframe.results.loadText_log(errors[i].ToString());
 
                         }
                         if (warnings.Count > 0)
                         {
-                            Program.results.loadText_log("Following Warnings: ");
+                            Program.mainframe.results.loadText_log("Following Warnings: ");
                             for (int i = 0; i < warnings.Count; i++)
                             {
-                                Program.results.loadText_log(warnings[i].ToString());
+                                Program.mainframe.results.loadText_log(warnings[i].ToString());
                             }
 
                         }
@@ -341,7 +341,7 @@ namespace antillesXMLv2
                 catch (XmlException ex)
                 {
                     //Program.hauptfenster.setStatusTxt("Es gab einen oder mehrere Fehler. Bitte schauen Sie ins Log");                    
-                    Program.results.loadText_log("Fehler " + ex.Message);
+                    Program.mainframe.results.loadText_log("Fehler " + ex.Message);
                 }
 
                 switch (result)
@@ -350,7 +350,7 @@ namespace antillesXMLv2
                     case XmlValidatorResult.Valid:
                         if (ausgabeflag)
                         {
-                            Program.results.loadText_log("Valid");
+                            Program.mainframe.results.loadText_log("Valid");
                             Program.Config.success = true;
                             //Program.hauptfenster.setStatusTxt("Das XML-File ist valide");
                             //Program.hauptfenster.setLogTxt("Das XML-File ist valide");
@@ -366,11 +366,11 @@ namespace antillesXMLv2
                         if (ausgabeflag)
                         {
                             //Program.hauptfenster.setStatusTxt("Bitte schauen sie ins Log");                            
-                            Program.results.loadText_log("Warnings: ");
+                            Program.mainframe.results.loadText_log("Warnings: ");
                             for (int i = 0; i < warnings.Count; i++)
                             {
 
-                                Program.results.loadText_log(warnings[i].ToString());
+                                Program.mainframe.results.loadText_log(warnings[i].ToString());
 
                             }
                         }
@@ -383,7 +383,7 @@ namespace antillesXMLv2
                             for (int i = 0; i < warnings.Count; i++)
                             {
 
-                                Program.results.loadText_log(warnings[i].ToString());
+                                Program.mainframe.results.loadText_log(warnings[i].ToString());
 
                             }
                         }
@@ -396,15 +396,15 @@ namespace antillesXMLv2
                             for (int i = 0; i < errors.Count; i++)
                             {
 
-                                Program.results.loadText_log(errors[i].ToString());
+                                Program.mainframe.results.loadText_log(errors[i].ToString());
 
                             }
                             if (warnings.Count > 0)
                             {
-                                Program.results.loadText_log("Folgende Warnungen: ");
+                                Program.mainframe.results.loadText_log("Folgende Warnungen: ");
                                 for (int i = 0; i < warnings.Count; i++)
                                 {
-                                    Program.results.loadText_log(warnings[i].ToString());
+                                    Program.mainframe.results.loadText_log(warnings[i].ToString());
                                 }
 
                             }
@@ -418,15 +418,15 @@ namespace antillesXMLv2
                             for (int i = 0; i < errors.Count; i++)
                             {
 
-                                Program.results.loadText_log(errors[i].ToString());
+                                Program.mainframe.results.loadText_log(errors[i].ToString());
 
                             }
                             if (warnings.Count > 0)
                             {
-                                Program.results.loadText_log("Folgende Warnungen: ");
+                                Program.mainframe.results.loadText_log("Folgende Warnungen: ");
                                 for (int i = 0; i < warnings.Count; i++)
                                 {
-                                    Program.results.loadText_log(warnings[i].ToString());
+                                    Program.mainframe.results.loadText_log(warnings[i].ToString());
                                 }
 
                             }
@@ -500,7 +500,7 @@ namespace antillesXMLv2
                 catch (XmlException ex)
                 {
                     //Program.hauptfenster.setStatusTxt("Es gab einen oder mehrere Fehler. Bitte schauen Sie ins Log");                    
-                    Program.results.loadText_log("Error " + ex.Message);
+                    Program.mainframe.results.loadText_log("Error " + ex.Message);
                 }
 
             }
@@ -518,7 +518,7 @@ namespace antillesXMLv2
                 catch (XmlException ex)
                 {
                     //Program.hauptfenster.setStatusTxt("Es gab einen oder mehrere Fehler. Bitte schauen Sie ins Log");                    
-                    Program.results.loadText_log("Error " + ex.Message);
+                    Program.mainframe.results.loadText_log("Error " + ex.Message);
                 }
 
             }
@@ -530,7 +530,7 @@ namespace antillesXMLv2
                 case XmlValidatorResult.Valid:
                     if (ausgabeflag)
                     {
-                        Program.results.loadText_log("Valid");
+                        Program.mainframe.results.loadText_log("Valid");
                         Program.Config.success = true;
                         //Program.hauptfenster.setStatusTxt("Das XML-File ist valide");
                         //Program.hauptfenster.setLogTxt("Das XML-File ist valide");
@@ -546,11 +546,11 @@ namespace antillesXMLv2
                     if (ausgabeflag)
                     {
                        // Program.hauptfenster.setStatusTxt("Bitte schauen sie ins Log");                       
-                        Program.results.loadText_log("Warnings: ");
+                        Program.mainframe.results.loadText_log("Warnings: ");
                         for (int i = 0; i < warnings.Count; i++)
                         {
 
-                            Program.results.loadText_log(warnings[i].ToString());
+                            Program.mainframe.results.loadText_log(warnings[i].ToString());
 
                         }
                     }
@@ -563,7 +563,7 @@ namespace antillesXMLv2
                         for (int i = 0; i < warnings.Count; i++)
                         {
 
-                            Program.results.loadText_log(warnings[i].ToString());
+                            Program.mainframe.results.loadText_log(warnings[i].ToString());
 
                         }
                     }
@@ -576,15 +576,15 @@ namespace antillesXMLv2
                         for (int i = 0; i < errors.Count; i++)
                         {
 
-                            Program.results.loadText_log(errors[i].ToString());
+                            Program.mainframe.results.loadText_log(errors[i].ToString());
 
                         }
                         if (warnings.Count > 0)
                         {
-                            Program.results.loadText_log("Following Warnings: ");
+                            Program.mainframe.results.loadText_log("Following Warnings: ");
                             for (int i = 0; i < warnings.Count; i++)
                             {
-                                Program.results.loadText_log(warnings[i].ToString());
+                                Program.mainframe.results.loadText_log(warnings[i].ToString());
                             }
 
                         }
@@ -598,15 +598,15 @@ namespace antillesXMLv2
                         for (int i = 0; i < errors.Count; i++)
                         {
 
-                            Program.results.loadText_log(errors[i].ToString());
+                            Program.mainframe.results.loadText_log(errors[i].ToString());
 
                         }
                         if (warnings.Count > 0)
                         {
-                            Program.results.loadText_log("Following Warnings: ");
+                            Program.mainframe.results.loadText_log("Following Warnings: ");
                             for (int i = 0; i < warnings.Count; i++)
                             {
-                                Program.results.loadText_log(warnings[i].ToString());
+                                Program.mainframe.results.loadText_log(warnings[i].ToString());
                             }
 
                         }
@@ -680,7 +680,7 @@ namespace antillesXMLv2
                     catch (XmlException ex)
                     {
                         //Program.hauptfenster.setStatusTxt("Es gab einen oder mehrere Fehler. Bitte schauen Sie ins Log");
-                        Program.results.loadText_log("Error " + ex.Message);
+                        Program.mainframe.results.loadText_log("Error " + ex.Message);
                     }
 
                 }
@@ -697,7 +697,7 @@ namespace antillesXMLv2
                     catch (XmlException ex)
                     {
                         //Program.hauptfenster.setStatusTxt("Es gab einen oder mehrere Fehler. Bitte schauen Sie ins Log");                      
-                        Program.results.loadText_log("Error " + ex.Message);
+                        Program.mainframe.results.loadText_log("Error " + ex.Message);
                     }
 
                 }
@@ -708,7 +708,7 @@ namespace antillesXMLv2
                     case XmlValidatorResult.Valid:
                         if (ausgabeflag)
                         {
-                            Program.results.loadText_log("Valid");
+                            Program.mainframe.results.loadText_log("Valid");
                             Program.Config.success = true;
                             //Program.hauptfenster.setStatusTxt("Durchlauf fertig. Bitte schauen sie ins Log.");
                             //Program.hauptfenster.setLogTxt("Das XML-File ist valide");
@@ -724,11 +724,11 @@ namespace antillesXMLv2
                         if (ausgabeflag)
                         {
                             //Program.hauptfenster.setStatusTxt("Bitte schauen sie ins Log");                          
-                            Program.results.loadText_log("Following Warnings: ");
+                            Program.mainframe.results.loadText_log("Following Warnings: ");
                             for (int i = 0; i < warnings.Count; i++)
                             {
 
-                                Program.results.loadText_log(warnings[i].ToString());
+                                Program.mainframe.results.loadText_log(warnings[i].ToString());
 
                             }
                         }
@@ -739,7 +739,7 @@ namespace antillesXMLv2
                             for (int i = 0; i < warnings.Count; i++)
                             {
 
-                                Program.results.loadText_log(warnings[i].ToString());
+                                Program.mainframe.results.loadText_log(warnings[i].ToString());
 
                             }
                         }
@@ -752,15 +752,15 @@ namespace antillesXMLv2
                             for (int i = 0; i < errors.Count; i++)
                             {
 
-                                Program.results.loadText_log(errors[i].ToString());
+                                Program.mainframe.results.loadText_log(errors[i].ToString());
 
                             }
                             if (warnings.Count > 0)
                             {
-                                Program.results.loadText_log("Following Warnings: ");
+                                Program.mainframe.results.loadText_log("Following Warnings: ");
                                 for (int i = 0; i < warnings.Count; i++)
                                 {
-                                    Program.results.loadText_log(warnings[i].ToString());
+                                    Program.mainframe.results.loadText_log(warnings[i].ToString());
                                 }
 
                             }
@@ -773,15 +773,15 @@ namespace antillesXMLv2
                             for (int i = 0; i < errors.Count; i++)
                             {
 
-                                Program.results.loadText_log(errors[i].ToString());
+                                Program.mainframe.results.loadText_log(errors[i].ToString());
 
                             }
                             if (warnings.Count > 0)
                             {
-                                Program.results.loadText_log("Following Warnings: ");
+                                Program.mainframe.results.loadText_log("Following Warnings: ");
                                 for (int i = 0; i < warnings.Count; i++)
                                 {
-                                    Program.results.loadText_log(warnings[i].ToString());
+                                    Program.mainframe.results.loadText_log(warnings[i].ToString());
                                 }
 
                             }

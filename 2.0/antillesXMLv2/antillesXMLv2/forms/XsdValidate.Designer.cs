@@ -231,6 +231,7 @@
             this.MinimumSize = new System.Drawing.Size(500, 450);
             this.Name = "XsdValidate_xsd";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "XML Schema Validation";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.XsdValidate_xsd_FormClosing);
             this.tabControl.ResumeLayout(false);

@@ -46,7 +46,7 @@ namespace antillesXMLv2
 
             catch (Exception ex)
             {
-                Program.results.loadText_log(ex.Message);
+                Program.mainframe.results.loadText_log(ex.Message);
             }
         
         

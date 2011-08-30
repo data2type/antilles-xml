@@ -114,9 +114,9 @@ namespace antillesXMLv2
             Program.plsW.BringToFront();
 
             // get log
-            Program.results.state = true;
-            Program.results.tabControl.SelectedTab = Program.results.tabPage_log;
-            Program.results.Show();
+            Program.mainframe.results.state = true;
+            Program.mainframe.results.tabControl.SelectedTab = Program.mainframe.results.tabPage_log;
+            Program.mainframe.results.Show();
 
             // take textboxes as final entry
             if (Program.Config.input != comboBox_input.Text) Program.Config.input = @comboBox_input.Text;
@@ -220,9 +220,9 @@ namespace antillesXMLv2
             Program.plsW.BringToFront();
 
             // get log
-            Program.results.state = true;
-            Program.results.tabControl.SelectedTab = Program.results.tabPage_log;
-            Program.results.Show();
+            Program.mainframe.results.state = true;
+            Program.mainframe.results.tabControl.SelectedTab = Program.mainframe.results.tabPage_log;
+            Program.mainframe.results.Show();
 
             // take textboxes as final entry
             if (Program.Config.input != comboBox_inputFolder.Text) Program.Config.input = @comboBox_inputFolder.Text;
@@ -351,12 +351,15 @@ namespace antillesXMLv2
 
         private void SchematronValidate_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;
-            Program.WINDOW_STATE = true;
-            Program.results.state = false;
-            Program.results.Hide();
-            Program.mainframe.formSwitcher();
-            Program.wizard.Show();
+            if (!Program.QUIT)
+            {
+                e.Cancel = true;
+                Program.WINDOW_STATE = true;
+                Program.mainframe.results.state = false;
+                Program.mainframe.results.Hide();
+                Program.mainframe.formSwitcher();
+                Program.mainframe.wizard.Show();
+            }
         }
 
         private void disableFeedback(object sender, EventArgs e)

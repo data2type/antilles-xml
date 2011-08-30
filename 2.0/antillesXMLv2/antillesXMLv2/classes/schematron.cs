@@ -76,7 +76,7 @@ namespace antillesXMLv2
             catch (Exception ex)
             {
 
-                Program.results.loadText_log(ex.Message);
+                Program.mainframe.results.loadText_log(ex.Message);
                 return;
 
             }
@@ -116,7 +116,7 @@ namespace antillesXMLv2
                 catch (Exception ex)
                 {
 
-                    Program.results.loadText_log(ex.Message);
+                    Program.mainframe.results.loadText_log(ex.Message);
                     Program.plsW.Hide();
                     return;
 
@@ -158,7 +158,7 @@ namespace antillesXMLv2
                 catch (Exception ex)
                 {
 
-                    Program.results.loadText_log(ex.Message);
+                    Program.mainframe.results.loadText_log(ex.Message);
                     Program.plsW.Hide();
                     return;
 
@@ -202,7 +202,7 @@ namespace antillesXMLv2
                 catch (Exception ex)
                 {
 
-                    Program.results.loadText_log(ex.Message);
+                    Program.mainframe.results.loadText_log(ex.Message);
                     Program.plsW.Hide();
                     return;
 
@@ -351,9 +351,9 @@ namespace antillesXMLv2
             {
                 if (flag)
                 {
-                    Program.results.loadText_log("In Datei " + path + ": ");
+                    Program.mainframe.results.loadText_log("In Datei " + path + ": ");
                 }
-                Program.results.loadText_log(line);
+                Program.mainframe.results.loadText_log(line);
                 flag = false;
             }
 

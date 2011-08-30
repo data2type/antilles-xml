@@ -167,6 +167,7 @@
             this.MinimumSize = new System.Drawing.Size(500, 450);
             this.Name = "Csv2Xml";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "CSV 2 XML";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Cals2Html_FormClosing);
             this.Load += new System.EventHandler(this.Cals2Html_Load);

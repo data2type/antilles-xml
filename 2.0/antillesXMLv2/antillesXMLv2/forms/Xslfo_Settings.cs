@@ -15,11 +15,11 @@ namespace antillesXMLv2
             switch (Properties.Settings.Default.FoFormatierer)
             {
                 case "renderx":
-                    label_formatter.Text = " RenderX Working Directory:";
+                    label_formatter.Text = "Path to RenderX Commandline Executeable:";
                     textBox_formatter.Text = Properties.Settings.Default.RenderXLocation;
                     break;
                 case "antennahouse":
-                    label_formatter.Text =  "Antenna House Working Directory:";
+                    label_formatter.Text = "Path to AntennaHouse Commandline Executeable:";
                     textBox_formatter.Text = Properties.Settings.Default.AntennahouseLocation;
                     break;
 

@@ -12,109 +12,155 @@ namespace antillesXMLv2
 {
     public partial class Mainframe : Form
     {
+
+        private int childCount = 0;
+        // Create the Windows Forms
+        public Xslt xslt = new Xslt();
+        public Results results = new Results();
+        public Wizard wizard = new Wizard();
+        public Xslfo xslfo = new Xslfo();
+        public XsdDoku xsddoku = new XsdDoku();
+        public Help help = new Help();
+        public ReportBug reportBug = new ReportBug();
+        public Word2Gen word = new Word2Gen();
+        public SyntaxHighlighting syntaxhighlighting = new SyntaxHighlighting();
+        public Xproc xproc = new Xproc();
+        public XsdValidate dtd = new XsdValidate();
+        public SchematronValidate schematronvalidate = new SchematronValidate();
+        public About about = new About();
+        public XsdValidate_xsd xsd = new XsdValidate_xsd();
+        public Hotfolder hotfoldForm = new Hotfolder();
+        public Csv2Xml csv2xml = new Csv2Xml();
+        public CheckUpdate checkupdate = new CheckUpdate();
+        public Eigenschaften eigenschaften = new Eigenschaften();
+
         public Mainframe()
         {
-            InitializeComponent();          
+           
+            InitializeComponent();
 
             int breite = this.Size.Width;
             double placeLeft = (2 * breite) / 100;
             double placeRight = (75 * breite) / 100;
 
-            Program.wizard.TopLevel = false;
-            this.Controls.Add(Program.wizard);            
-            Program.wizard.Top = 90;
-            Program.wizard.Left = (breite / 2) - 200;
-            Program.wizard.Show();            
+            //xslt
+            xslt.MdiParent = this;
+            xslt.setTextboxRange();
+            xslt.Top = 50;
+            xslt.Left = Convert.ToInt32(placeLeft);
+            childCount++;
 
+            //results
+            results.MdiParent = this;          
+            results.Top = 50;
+            results.Left = Convert.ToInt32(placeRight);
+            childCount++;
+
+            //wizard
+            wizard.MdiParent = this;        
+            childCount++;
+            wizard.Show();  
             
-            Program.xslt.TopLevel = false;
-            this.Controls.Add(Program.xslt);
-            Program.xslt.Top = 50;
-            Program.xslt.Left = Convert.ToInt32(placeLeft);
+            //xslfo
+            xslfo.MdiParent = this;           
+            xslfo.Top = 50;
+            xslfo.Left = Convert.ToInt32(placeLeft);
+            xslfo.setTextboxRange();
+            childCount++;
 
-            Program.results.TopLevel = false;
-            this.Controls.Add(Program.results);
-            Program.results.Top = 50;
-            Program.results.Left = Convert.ToInt32(placeRight);
+            //xsd doku
+            xsddoku.MdiParent = this;            
+            xsddoku.Top = 50;
+            xsddoku.Left = Convert.ToInt32(placeLeft);
+            xsddoku.setTextboxRange();
+            childCount++;
 
-            Program.xslfo.TopLevel = false;
-            this.Controls.Add(Program.xslfo);
-            Program.xslfo.Top = 50;
-            Program.xslfo.Left = Convert.ToInt32(placeLeft);
+            //help
+            help.MdiParent = this;            
+            help.Top = 50;
+            help.Left = Convert.ToInt32(placeLeft);
+            childCount++;
 
-            Program.xsddoku.TopLevel = false;
-            this.Controls.Add(Program.xsddoku);
-            Program.xsddoku.Top = 50;
-            Program.xsddoku.Left = Convert.ToInt32(placeLeft);
-
-            Program.help.TopLevel = false;
-            this.Controls.Add(Program.help);
-            Program.help.Top = 50;
-            Program.help.Left = Convert.ToInt32(placeLeft);           
-
-            Program.reportBug.TopLevel = false;
-            this.Controls.Add(Program.reportBug);
-            Program.reportBug.Top = 50;
-            Program.reportBug.Left = Convert.ToInt32(placeLeft);
+            // report bug
+            reportBug.MdiParent = this;            
+            reportBug.Top = 50;
+            reportBug.Left = Convert.ToInt32(placeLeft);
+            childCount++;
             
-            Program.word.TopLevel = false;
-            this.Controls.Add(Program.word);
-            Program.word.Top = 50;
-            Program.word.Left = Convert.ToInt32(placeLeft);
+            //word2xml
+            word.MdiParent = this;           
+            word.Top = 50;
+            word.Left = Convert.ToInt32(placeLeft);
+            word.setTextboxRange();
+            childCount++;
 
-            Program.syntaxhighlighting.TopLevel = false;
-            this.Controls.Add(Program.syntaxhighlighting);
-            Program.syntaxhighlighting.Top = 50;
-            Program.syntaxhighlighting.Left = Convert.ToInt32(placeLeft);
+            //syntaxhighlighting
+            syntaxhighlighting.MdiParent = this;           
+            syntaxhighlighting.Top = 50;
+            syntaxhighlighting.Left = Convert.ToInt32(placeLeft);
+            syntaxhighlighting.setTextboxRange();
+            childCount++;
 
-            Program.xproc.TopLevel = false;
-            this.Controls.Add(Program.xproc);
-            Program.xproc.Top = 50;
-            Program.xproc.Left = Convert.ToInt32(placeLeft);
+            //xproc
+            xproc.MdiParent = this;           
+            xproc.Top = 50;
+            xproc.Left = Convert.ToInt32(placeLeft);
+            xproc.setTextboxRange();
+            childCount++;
 
-            Program.dtd.TopLevel = false;
-            this.Controls.Add(Program.dtd);
-            Program.dtd.Top = 50;
-            Program.dtd.Left = Convert.ToInt32(placeLeft);
+            //dtd
+            dtd.MdiParent = this;
+            dtd.Top = 50;
+            dtd.Left = Convert.ToInt32(placeLeft);
+            dtd.setTextboxRange();
+            childCount++;
 
-            Program.schematronvalidate.TopLevel = false;
-            this.Controls.Add(Program.schematronvalidate);
-            Program.schematronvalidate.Top = 50;
-            Program.schematronvalidate.Left = Convert.ToInt32(placeLeft);
+            //schematronValidate
+            schematronvalidate.MdiParent = this;
+            schematronvalidate.Top = 50;
+            schematronvalidate.Left = Convert.ToInt32(placeLeft);
+            schematronvalidate.setTextboxRange();
+            childCount++;
 
-            Program.about.TopLevel = false;
-            this.Controls.Add(Program.about);
-            Program.about.Top = 30;
-            Program.about.Left = Convert.ToInt32(placeLeft);
+            //about
+            about.MdiParent = this;            
+            about.Top = 30;
+            about.Left = Convert.ToInt32(placeLeft);
+            childCount++;
 
-            Program.xsd.TopLevel = false;
-            this.Controls.Add(Program.xsd);
-            Program.xsd.Top = 50;
-            Program.xsd.Left = Convert.ToInt32(placeLeft);
+            //xsd
+            xsd.MdiParent = this;
+            xsd.Top = 50;
+            xsd.Left = Convert.ToInt32(placeLeft);
+            xsd.setTextboxRange();       
+            childCount++;
 
-            Program.hotfoldForm.TopLevel = false;
-            this.Controls.Add(Program.hotfoldForm);
-            Program.hotfoldForm.Top = 50;
-            Program.hotfoldForm.Left = Convert.ToInt32(placeLeft);
+            // Hotfolder
+            hotfoldForm.MdiParent = this;
+            hotfoldForm.Top = 50;
+            hotfoldForm.Left = Convert.ToInt32(placeLeft);
+            hotfoldForm.setTextboxRange();
+            childCount++;
 
-            Program.csv2xml.TopLevel = false;
-            this.Controls.Add(Program.csv2xml);
-            Program.csv2xml.Top = 50;
-            Program.csv2xml.Left = Convert.ToInt32(placeLeft);
+            //csv2xml
+            csv2xml.MdiParent = this;
+            csv2xml.Top = 50;
+            csv2xml.Left = Convert.ToInt32(placeLeft);
+            csv2xml.setTextboxRange();
+            childCount++;
 
-            Program.checkupdate.TopLevel = false;
-            this.Controls.Add(Program.checkupdate);
-            Program.checkupdate.Top = 50;
-            Program.checkupdate.Left = Convert.ToInt32(placeLeft);
+            //check for update
+            checkupdate.MdiParent = this;
+            checkupdate.Top = 50;
+            checkupdate.Left = Convert.ToInt32(placeLeft);
+            childCount++;
 
-            Program.eigenschaften.TopLevel = false;
-            this.Controls.Add(Program.eigenschaften);
-            Program.eigenschaften.Top = 50;
-            Program.eigenschaften.Left = Convert.ToInt32(placeLeft); 
-
+            //eigenschaften
+            eigenschaften.MdiParent = this;        
+            eigenschaften.Top = 50;
+            eigenschaften.Left = Convert.ToInt32(placeLeft);
+            childCount++;
            
-            
-          
         }
 
         // class to hide the forms if WINDOW_STATE is true
@@ -138,29 +184,25 @@ namespace antillesXMLv2
                     catch (Exception)
                     {
 
-                        Program.results.loadText_log("Hotfolder was still active!");
+                        results.loadText_log("Hotfolder was still active!");
                         return;
                     }
 
                 }
                 
-                Program.xslt.Hide();
-                // Program.help.Hide();
-                // Program.reportBug.Hide();
-                Program.checkupdate.Hide();
-                //  Program.about.Hide();
-                Program.syntaxhighlighting.Hide();
-                Program.csv2xml.Hide();
-                Program.hotfoldForm.Hide();
-                Program.word.Hide();
-                Program.xsd.Hide();
-                // Program.eigenschaften.Hide();
-                Program.xslfo.Hide();
-                Program.dtd.Hide();
-                Program.wizard.Hide();
-                Program.xproc.Hide();
-                Program.xsddoku.Hide();
-                Program.schematronvalidate.Hide();
+                xslt.Hide();               
+                checkupdate.Hide();              
+                syntaxhighlighting.Hide();
+                csv2xml.Hide();
+                hotfoldForm.Hide();
+                word.Hide();
+                xsd.Hide();               
+                xslfo.Hide();
+                dtd.Hide();
+                wizard.Hide();
+                xproc.Hide();
+                xsddoku.Hide();
+                schematronvalidate.Hide();
                 Program.WINDOW_STATE = false;
 
                 checkJava();
@@ -211,11 +253,11 @@ namespace antillesXMLv2
 
                 string currentVerion = subKey.GetValue("CurrentVersion").ToString();
 
-               // Program.results.loadText_log(currentVerion);
+               // Program.mainframe.results.loadText_log(currentVerion);
             }
             catch (Exception) {
 
-                Program.results.loadText_log("It seems that you don´t have Java installed on your System. Some Features only work with a propper installed Java Runtime Enviroment. For futher Details please visit our Website at: http://www.data2type.de in the antillesXML Help Section.");
+                results.loadText_log("It seems that you don´t have Java installed on your System. Some Features only work with a propper installed Java Runtime Enviroment. For futher Details please visit our Website at: http://www.data2type.de in the antillesXML Help Section.");
                 
             }
         }
@@ -229,10 +271,10 @@ namespace antillesXMLv2
         {
             Program.WINDOW_STATE = true;
             formSwitcher();
-            Program.xslt.Show();
+            xslt.Show();
 
-            Program.results.Show();
-            Program.results.state = true;
+            results.Show();
+            results.state = true;
 
         }
 
@@ -240,10 +282,10 @@ namespace antillesXMLv2
         {
             Program.WINDOW_STATE = true;
             formSwitcher();
-            Program.xslfo.Show();
+            xslfo.Show();
 
-            Program.results.Show();
-            Program.results.state = true;
+            results.Show();
+            results.state = true;
         }
 
         private void xSLToolStripMenuItem_Click(object sender, EventArgs e)
@@ -253,29 +295,29 @@ namespace antillesXMLv2
 
         private void logWindowsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Program.results.tabControl.SelectedTab = Program.results.tabPage_log;
+            results.tabControl.SelectedTab = results.tabPage_log;
         }
 
         private void resultWindowToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            Program.results.tabControl.SelectedTab = Program.results.tabPage_results;
+            results.tabControl.SelectedTab = results.tabPage_results;
            
         }
 
         private void outputToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Program.results.state == false) {
+            if (results.state == false) {
 
-                Program.results.Show();
-                Program.results.state = true;
+                results.Show();
+                results.state = true;
             
             }
-            else if (Program.results.state == true) {
+            else if (results.state == true) {
 
 
-                Program.results.Hide();
-                Program.results.state = false;
+                results.Hide();
+                results.state = false;
             
             }
         }
@@ -284,44 +326,46 @@ namespace antillesXMLv2
         {
             Program.WINDOW_STATE = true;
             formSwitcher();
-            Program.xproc.Show();
+            xproc.Show();
 
-            Program.results.Show();
-            Program.results.state = true;
+            results.Show();
+            results.state = true;
         }
 
         private void dTDToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.WINDOW_STATE = true;
             formSwitcher();
-            Program.dtd.Show();
+            dtd.Show();
 
-            Program.results.Show();
-            Program.results.state = true;
+            results.Show();
+            results.state = true;
         }
 
         private void xMLSchemaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.WINDOW_STATE = true;
             formSwitcher();
-            Program.xsd.Show();
+            xsd.Show();
 
-            Program.results.Show();
-            Program.results.state = true;
+            results.Show();
+            results.state = true;
         }
 
         private void schematronToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.WINDOW_STATE = true;
             formSwitcher();
-            Program.schematronvalidate.Show();
+            schematronvalidate.Show();
 
-            Program.results.Show();
-            Program.results.state = true;
+            results.Show();
+            results.state = true;
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Program.QUIT = true;
+
             if (Program.Config.hotfolder) 
             {
 
@@ -335,7 +379,7 @@ namespace antillesXMLv2
                 catch (Exception) 
                 {
 
-                    Program.results.loadText_log("Hotfolder was still active!");
+                    results.loadText_log("Hotfolder was still active!");
                     return;
                 }
             
@@ -348,79 +392,74 @@ namespace antillesXMLv2
         {
             Program.WINDOW_STATE = true;
             formSwitcher();
-            Program.word.Show();
+            word.Show();
 
-            Program.results.Show();
-            Program.results.state = true;
+            results.Show();
+            results.state = true;
         }
 
         private void calsToHTMLToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.WINDOW_STATE = true;
             formSwitcher();
-            Program.csv2xml.Show();
+            csv2xml.Show();
 
-            Program.results.Show();
-            Program.results.state = true;
+            results.Show();
+            results.state = true;
         }
 
         private void xMLSyntaxhighlightingToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.WINDOW_STATE = true;
             formSwitcher();
-            Program.syntaxhighlighting.Show();
+            syntaxhighlighting.Show();
 
-            Program.results.Show();
-            Program.results.state = true;
+            results.Show();
+            results.state = true;
         }
 
         private void hotfolderToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.WINDOW_STATE = true;
             formSwitcher();
-            Program.hotfoldForm.Show();
+            hotfoldForm.Show();
 
-            Program.results.Show();
-            Program.results.state = true;
+            results.Show();
+            results.state = true;
         }
 
         private void aboutAntillesXMLToolStripMenuItem_Click(object sender, EventArgs e)
         {
-         //   Program.WINDOW_STATE = true;
-         //   formSwitcher();
-            Program.about.Show();
-            Program.about.BringToFront();
+        
+            about.Show();
+            about.BringToFront();
         }
 
         private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Program.WINDOW_STATE = true;
-          //  formSwitcher();
-            Program.eigenschaften.Show();
-            Program.eigenschaften.BringToFront();
+           
+            eigenschaften.Show();
+            eigenschaften.BringToFront();
         }
 
         private void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.WINDOW_STATE = true;
             formSwitcher();
-            Program.checkupdate.Show();
+            checkupdate.Show();
         }
 
         private void onlineHelpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //Program.WINDOW_STATE = true;
-           // formSwitcher();
-            Program.help.Show();
-            Program.help.BringToFront();
+        {           
+            help.Show();
+            help.BringToFront();
         }
 
         private void reportABugToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          //  Program.WINDOW_STATE = true;
-          //  formSwitcher();
-            Program.reportBug.Show();
-            Program.reportBug.BringToFront();
+         
+            reportBug.Show();
+            reportBug.BringToFront();
         }
 
         private void Mainframe_Resize(object sender, EventArgs e)
@@ -450,19 +489,19 @@ namespace antillesXMLv2
         {
             Program.WINDOW_STATE = true;
             formSwitcher();
-            Program.xsddoku.Show();
+            xsddoku.Show();
 
-            Program.results.Show();
-            Program.results.state = true;
+            results.Show();
+            results.state = true;
         }
 
         private void wizardToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.WINDOW_STATE = true;
-            Program.results.state = false;
-            Program.results.Hide();
+            results.state = false;
+            results.Hide();
             Program.mainframe.formSwitcher();
-            Program.wizard.Show();
+            Program.mainframe.wizard.Show();
         }
 
         private void toolStripStatusLabel_TextChanged(object sender, EventArgs e)
@@ -482,6 +521,8 @@ namespace antillesXMLv2
         private void Mainframe_FormClosing(object sender, FormClosingEventArgs e)
         {
 
+            Program.QUIT = true;
+
             if (Program.Config.hotfolder)
             {
 
@@ -495,7 +536,7 @@ namespace antillesXMLv2
                 catch (Exception)
                 {
 
-                    Program.results.loadText_log("Hotfolder was still active!");
+                    results.loadText_log("Hotfolder was still active!");
                     return;
                 }
 

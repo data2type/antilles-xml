@@ -160,6 +160,7 @@
             this.MinimizeBox = false;
             this.Name = "Results";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Statistics";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Results_FormClosing);
             this.Click += new System.EventHandler(this.Results_Click);

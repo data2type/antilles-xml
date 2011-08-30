@@ -120,79 +120,79 @@ namespace antillesXMLv2
                     case "XSLT Transformation":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.xslt.Show();
-                        Program.results.Show();
+                        Program.mainframe.xslt.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "XSL-FO":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
 
-                        Program.xslfo.Show();
-                        Program.results.Show();
+                        Program.mainframe.xslfo.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "XProc":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.xproc.Show();
-                        Program.results.Show();
+                        Program.mainframe.xproc.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "XML Schema":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.xsd.Show();
-                        Program.results.Show();
+                        Program.mainframe.xsd.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "DTD":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.dtd.Show();
-                        Program.results.Show();
+                        Program.mainframe.dtd.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "Schematron":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.schematronvalidate.Show();
-                        Program.results.Show();
+                        Program.mainframe.schematronvalidate.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "Word to XML":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.word.Show();
-                        Program.results.Show();
+                        Program.mainframe.word.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "CSV to XML":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.csv2xml.Show();
-                        Program.results.Show();
+                        Program.mainframe.csv2xml.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "XML Syntaxhighlighting":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.syntaxhighlighting.Show();
-                        Program.results.Show();
+                        Program.mainframe.syntaxhighlighting.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "Hotfolder":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.hotfoldForm.Show();
-                        Program.results.Show();
+                        Program.mainframe.hotfoldForm.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "XSD Documentation":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.xsddoku.Show();
-                        Program.results.Show();
+                        Program.mainframe.xsddoku.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     default:
@@ -215,79 +215,79 @@ namespace antillesXMLv2
                     case "XSLT Transformation":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.xslt.Show();
-                        Program.results.Show();
+                        Program.mainframe.xslt.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "XSL-FO":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
 
-                        Program.xslfo.Show();
-                        Program.results.Show();
+                        Program.mainframe.xslfo.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "XProc":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.xproc.Show();
-                        Program.results.Show();
+                        Program.mainframe.xproc.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "XML Schema":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.xsd.Show();
-                        Program.results.Show();
+                        Program.mainframe.xsd.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "DTD":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.dtd.Show();
-                        Program.results.Show();
+                        Program.mainframe.dtd.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "Schematron":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.schematronvalidate.Show();
-                        Program.results.Show();
+                        Program.mainframe.schematronvalidate.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "Word to XML":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.word.Show();
-                        Program.results.Show();
+                        Program.mainframe.word.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "CSV to XML":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.csv2xml.Show();
-                        Program.results.Show();
+                        Program.mainframe.csv2xml.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "XML Syntaxhighlighting":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.syntaxhighlighting.Show();
-                        Program.results.Show();
+                        Program.mainframe.syntaxhighlighting.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "Hotfolder":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.hotfoldForm.Show();
-                        Program.results.Show();
+                        Program.mainframe.hotfoldForm.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     case "XSD Documentation":
                         Program.WINDOW_STATE = true;
                         Program.mainframe.formSwitcher();
-                        Program.xsddoku.Show();
-                        Program.results.Show();
+                        Program.mainframe.xsddoku.Show();
+                        Program.mainframe.results.Show();
                         return;
 
                     default:

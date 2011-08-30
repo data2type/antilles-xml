@@ -155,6 +155,7 @@
             this.MinimumSize = new System.Drawing.Size(500, 450);
             this.Name = "XsdDoku";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "XSD Documentation";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SyntaxHighlighting_FormClosing);
             this.tabControl.ResumeLayout(false);

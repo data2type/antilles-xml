@@ -100,7 +100,7 @@ namespace antillesXMLv2
                             catch (Exception ex)
                             {
 
-                                Program.results.loadText_log("Problems with removing fo files" + ex.Message);                                
+                                Program.mainframe.results.loadText_log("Problems with removing fo files" + ex.Message);                                
 
                             }
 
@@ -162,7 +162,7 @@ namespace antillesXMLv2
                         catch (Exception ex)
                         {
 
-                            Program.results.loadText_log("Problems with removing fo files" + ex.Message);
+                            Program.mainframe.results.loadText_log("Problems with removing fo files" + ex.Message);
 
                         }                    
                     
@@ -210,7 +210,7 @@ namespace antillesXMLv2
             // warten bis alle ausgaben gemacht wurden und prozess beenden
             p.WaitForExit();
 
-            Program.results.loadText_log(log);            
+            Program.mainframe.results.loadText_log(log);            
             log = "";
             
           

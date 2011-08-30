@@ -95,7 +95,7 @@ namespace antillesXMLv2
                 StreamReader myFile = new StreamReader(target, System.Text.Encoding.Default);
                 inhalt = myFile.ReadToEnd();
                 myFile.Close();
-                Program.results.loadText_results(inhalt);
+                Program.mainframe.results.loadText_results(inhalt);
 
                 Program.mainframe.toolStripStatusLabel.Text = "Operation succeeded at " + DateTime.Now.ToString("yyyy.MM.dd hh:mm:ss");
                 Program.Config.success = true;
@@ -114,7 +114,7 @@ namespace antillesXMLv2
                     //Program.hauptfenster.setStatusTxt("Bitte schauen Sie ins Log");
 
                 }
-                Program.results.loadText_log(ausgabe);
+                Program.mainframe.results.loadText_log(ausgabe);
             }
             catch (Saxon.Api.DynamicError de)
             {
@@ -126,7 +126,7 @@ namespace antillesXMLv2
                     //Program.hauptfenster.setStatusTxt("Bitte schauen Sie ins Log");
 
                 }
-                Program.results.loadText_log(ausgabe);
+                Program.mainframe.results.loadText_log(ausgabe);
             }
             catch (Exception exc)
             {
@@ -139,10 +139,10 @@ namespace antillesXMLv2
 
                     //Program.hauptfenster.setStatusTxt("Es gab einen oder mehrere Fehler. Bitte schauen Sie ins Log");                   
                     string ausgabe = "Failed unexpectedly: " + exc.Message;
-                    Program.results.loadText_log(ausgabe);
+                    Program.mainframe.results.loadText_log(ausgabe);
                     for (int i = 0; i < FehlerListe.Count; i++)
                     {                  
-                        Program.results.loadText_log(FehlerListe[i].ToString());
+                        Program.mainframe.results.loadText_log(FehlerListe[i].ToString());
                     }
                 }
             }
@@ -213,7 +213,7 @@ namespace antillesXMLv2
                 StreamReader myFile = new StreamReader(target, System.Text.Encoding.Default);
                 inhalt = myFile.ReadToEnd();
                 myFile.Close();
-                Program.results.loadText_results(inhalt);
+                Program.mainframe.results.loadText_results(inhalt);
                 Program.mainframe.toolStripStatusLabel.Text = "Operation succeeded at " + DateTime.Now.ToString("yyyy.MM.dd hh:mm:ss");
                 Program.Config.success = true;
 
@@ -231,7 +231,7 @@ namespace antillesXMLv2
                     //Program.hauptfenster.setStatusTxt("Bitte schauen Sie ins Log");
 
                 }
-                Program.results.loadText_log(ausgabe);
+                Program.mainframe.results.loadText_log(ausgabe);
             }
             catch (Saxon.Api.DynamicError de)
             {
@@ -243,7 +243,7 @@ namespace antillesXMLv2
                     //Program.hauptfenster.setStatusTxt("Bitte schauen Sie ins Log");
 
                 }
-                Program.results.loadText_log(ausgabe);
+                Program.mainframe.results.loadText_log(ausgabe);
             }
             catch (Exception exc)
             {
@@ -256,10 +256,10 @@ namespace antillesXMLv2
 
                     //Program.hauptfenster.setStatusTxt("Es gab einen oder mehrere Fehler. Bitte schauen Sie ins Log");                   
                     string ausgabe = "Failed unexpectedly: " + exc.Message;
-                    Program.results.loadText_log(ausgabe);
+                    Program.mainframe.results.loadText_log(ausgabe);
                     for (int i = 0; i < FehlerListe.Count; i++)
                     {
-                        Program.results.loadText_log(FehlerListe[i].ToString());
+                        Program.mainframe.results.loadText_log(FehlerListe[i].ToString());
                     }
                 }
             }
@@ -333,7 +333,7 @@ namespace antillesXMLv2
                 StreamReader myFile = new StreamReader(target, System.Text.Encoding.Default);
                 inhalt = myFile.ReadToEnd();
                 myFile.Close();
-                Program.results.loadText_results(inhalt);
+                Program.mainframe.results.loadText_results(inhalt);
                 Program.mainframe.toolStripStatusLabel.Text = "Operation succeeded at " + DateTime.Now.ToString("yyyy.MM.dd hh:mm:ss");
                 Program.Config.success = true;
 
@@ -351,7 +351,7 @@ namespace antillesXMLv2
                     //Program.hauptfenster.setStatusTxt("Bitte schauen Sie ins Log");
 
                 }
-                Program.results.loadText_log(ausgabe);
+                Program.mainframe.results.loadText_log(ausgabe);
             }
             catch (Saxon.Api.DynamicError de)
             {
@@ -363,7 +363,7 @@ namespace antillesXMLv2
                     //Program.hauptfenster.setStatusTxt("Bitte schauen Sie ins Log");
 
                 }
-                Program.results.loadText_log(ausgabe);
+                Program.mainframe.results.loadText_log(ausgabe);
             }
             catch (Exception exc)
             {
@@ -376,10 +376,10 @@ namespace antillesXMLv2
 
                     //Program.hauptfenster.setStatusTxt("Es gab einen oder mehrere Fehler. Bitte schauen Sie ins Log");                   
                     string ausgabe = "Failed unexpectedly: " + exc.Message;
-                    Program.results.loadText_log(ausgabe);
+                    Program.mainframe.results.loadText_log(ausgabe);
                     for (int i = 0; i < FehlerListe.Count; i++)
                     {
-                        Program.results.loadText_log(FehlerListe[i].ToString());
+                        Program.mainframe.results.loadText_log(FehlerListe[i].ToString());
                     }
                 }
             }
@@ -477,7 +477,7 @@ namespace antillesXMLv2
                     //Program.hauptfenster.setStatusTxt("Bitte schauen Sie ins Log");
 
                 }
-                Program.results.loadText_log(ausgabe);
+                Program.mainframe.results.loadText_log(ausgabe);
             }
             catch (Saxon.Api.DynamicError de)
             {
@@ -489,7 +489,7 @@ namespace antillesXMLv2
                     //Program.hauptfenster.setStatusTxt("Bitte schauen Sie ins Log");
 
                 }
-                Program.results.loadText_log(ausgabe);
+                Program.mainframe.results.loadText_log(ausgabe);
             }
             catch (Exception exc)
             {
@@ -502,10 +502,10 @@ namespace antillesXMLv2
 
                     //Program.hauptfenster.setStatusTxt("Es gab einen oder mehrere Fehler. Bitte schauen Sie ins Log");                   
                     string ausgabe = "Failed unexpectedly: " + exc.Message;
-                    Program.results.loadText_log(ausgabe);
+                    Program.mainframe.results.loadText_log(ausgabe);
                     for (int i = 0; i < FehlerListe.Count; i++)
                     {
-                        Program.results.loadText_log(FehlerListe[i].ToString());
+                        Program.mainframe.results.loadText_log(FehlerListe[i].ToString());
                     }
                 }
             }
@@ -786,7 +786,7 @@ namespace antillesXMLv2
             catch (Exception)
             {
 
-                Program.results.loadText_log("Fehler beim Lesen des Logfiles");
+                Program.mainframe.results.loadText_log("Fehler beim Lesen des Logfiles");
                 return lukeskywalker;
 
             }
@@ -794,7 +794,7 @@ namespace antillesXMLv2
             string line = null;
             while ((line = sr.ReadLine()) != null)
             {
-                Program.results.loadText_log(line);
+                Program.mainframe.results.loadText_log(line);
                 lukeskywalker = true;
             }
 

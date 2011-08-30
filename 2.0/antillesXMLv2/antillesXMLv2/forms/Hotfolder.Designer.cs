@@ -30,6 +30,9 @@
         {
             this.tabControl = new System.Windows.Forms.TabControl();
             this.hotfolder_xslt = new System.Windows.Forms.TabPage();
+            this.comboBox_stylesheet = new System.Windows.Forms.ComboBox();
+            this.comboBox_target = new System.Windows.Forms.ComboBox();
+            this.combobox_input = new System.Windows.Forms.ComboBox();
             this.label_hotfolder = new System.Windows.Forms.Label();
             this.button_stop = new System.Windows.Forms.Button();
             this.button_target = new System.Windows.Forms.Button();
@@ -41,9 +44,6 @@
             this.dataGridView_parameter = new System.Windows.Forms.DataGridView();
             this.Parameter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Value = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox_stylesheet = new System.Windows.Forms.ComboBox();
-            this.comboBox_target = new System.Windows.Forms.ComboBox();
-            this.combobox_input = new System.Windows.Forms.ComboBox();
             this.tabControl.SuspendLayout();
             this.hotfolder_xslt.SuspendLayout();
             this.tabPage_parameters.SuspendLayout();
@@ -81,6 +81,36 @@
             this.hotfolder_xslt.Text = "XSLT";
             this.hotfolder_xslt.UseVisualStyleBackColor = true;
             this.hotfolder_xslt.Click += new System.EventHandler(this.hotfolder_xslt_Click);
+            // 
+            // comboBox_stylesheet
+            // 
+            this.comboBox_stylesheet.DropDownWidth = 550;
+            this.comboBox_stylesheet.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_stylesheet.FormattingEnabled = true;
+            this.comboBox_stylesheet.Location = new System.Drawing.Point(31, 219);
+            this.comboBox_stylesheet.Name = "comboBox_stylesheet";
+            this.comboBox_stylesheet.Size = new System.Drawing.Size(320, 21);
+            this.comboBox_stylesheet.TabIndex = 25;
+            // 
+            // comboBox_target
+            // 
+            this.comboBox_target.DropDownWidth = 550;
+            this.comboBox_target.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_target.FormattingEnabled = true;
+            this.comboBox_target.Location = new System.Drawing.Point(31, 139);
+            this.comboBox_target.Name = "comboBox_target";
+            this.comboBox_target.Size = new System.Drawing.Size(320, 21);
+            this.comboBox_target.TabIndex = 24;
+            // 
+            // combobox_input
+            // 
+            this.combobox_input.DropDownWidth = 550;
+            this.combobox_input.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combobox_input.FormattingEnabled = true;
+            this.combobox_input.Location = new System.Drawing.Point(31, 59);
+            this.combobox_input.Name = "combobox_input";
+            this.combobox_input.Size = new System.Drawing.Size(320, 21);
+            this.combobox_input.TabIndex = 23;
             // 
             // label_hotfolder
             // 
@@ -189,36 +219,6 @@
             this.Value.HeaderText = "Value";
             this.Value.Name = "Value";
             // 
-            // comboBox_stylesheet
-            // 
-            this.comboBox_stylesheet.DropDownWidth = 550;
-            this.comboBox_stylesheet.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_stylesheet.FormattingEnabled = true;
-            this.comboBox_stylesheet.Location = new System.Drawing.Point(31, 219);
-            this.comboBox_stylesheet.Name = "comboBox_stylesheet";
-            this.comboBox_stylesheet.Size = new System.Drawing.Size(320, 21);
-            this.comboBox_stylesheet.TabIndex = 25;
-            // 
-            // comboBox_target
-            // 
-            this.comboBox_target.DropDownWidth = 550;
-            this.comboBox_target.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_target.FormattingEnabled = true;
-            this.comboBox_target.Location = new System.Drawing.Point(31, 139);
-            this.comboBox_target.Name = "comboBox_target";
-            this.comboBox_target.Size = new System.Drawing.Size(320, 21);
-            this.comboBox_target.TabIndex = 24;
-            // 
-            // combobox_input
-            // 
-            this.combobox_input.DropDownWidth = 550;
-            this.combobox_input.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.combobox_input.FormattingEnabled = true;
-            this.combobox_input.Location = new System.Drawing.Point(31, 59);
-            this.combobox_input.Name = "combobox_input";
-            this.combobox_input.Size = new System.Drawing.Size(320, 21);
-            this.combobox_input.TabIndex = 23;
-            // 
             // Hotfolder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,6 +231,7 @@
             this.MinimumSize = new System.Drawing.Size(500, 450);
             this.Name = "Hotfolder";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Hotfolder";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Hotfolder_FormClosing);
             this.tabControl.ResumeLayout(false);

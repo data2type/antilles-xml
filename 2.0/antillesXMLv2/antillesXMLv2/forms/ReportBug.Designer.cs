@@ -60,6 +60,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "ReportBug";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Report a Bug";
             this.ResumeLayout(false);
             this.PerformLayout();

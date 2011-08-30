@@ -60,24 +60,29 @@ namespace antillesXMLv2
 
         private void Results_Click(object sender, EventArgs e)
         {
-            Program.results.Activate();
+            Program.mainframe.results.Activate();
         }
 
         private void Results_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;
-            state = false;
-            this.Hide();
+
+            if (!Program.QUIT)
+            {
+                e.Cancel = true;
+                state = false;
+                this.Hide();
+            }
+           
         }
 
         private void Results_MouseDown(object sender, MouseEventArgs e)
         {
-            Program.results.Activate();
+            this.Activate();
         }
 
         private void Results_Move(object sender, EventArgs e)
         {
-            Program.results.Activate();
+            this.Activate();
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)

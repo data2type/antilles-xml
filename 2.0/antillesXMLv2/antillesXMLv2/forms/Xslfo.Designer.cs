@@ -376,6 +376,7 @@
             this.MinimumSize = new System.Drawing.Size(500, 450);
             this.Name = "Xslfo";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "XSL-FO Transformations";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Xslfo_FormClosing);
             this.tabControl_xslfo.ResumeLayout(false);

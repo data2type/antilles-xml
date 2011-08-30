@@ -263,7 +263,7 @@
             this.logWindowToolStripMenuItem});
             this.outputToolStripMenuItem.Image = global::antillesXMLv2.Properties.Resources.output;
             this.outputToolStripMenuItem.Name = "outputToolStripMenuItem";
-            this.outputToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.outputToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.outputToolStripMenuItem.Text = "Output";
             this.outputToolStripMenuItem.Click += new System.EventHandler(this.outputToolStripMenuItem_Click);
             // 
@@ -287,7 +287,7 @@
             // 
             this.wizardToolStripMenuItem.Image = global::antillesXMLv2.Properties.Resources.output;
             this.wizardToolStripMenuItem.Name = "wizardToolStripMenuItem";
-            this.wizardToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.wizardToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.wizardToolStripMenuItem.Text = "Wizard";
             this.wizardToolStripMenuItem.Click += new System.EventHandler(this.wizardToolStripMenuItem_Click);
             // 
@@ -352,6 +352,7 @@
             this.Controls.Add(this.menuStrip);
             this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Mainframe";
             this.Text = "antillesXML";

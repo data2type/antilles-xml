@@ -1,21 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using Saxon.Api;
 using System.IO;
-using System.Collections;
-using System.Xml;
-using System.Xml.Schema;
 using System.Xml.Serialization;
-using System.Net;
-using System.Text.RegularExpressions;
-using System.Threading;
 
 namespace antillesXMLv2
 {
@@ -67,6 +55,7 @@ namespace antillesXMLv2
                         (ctl as ComboBox).AutoCompleteSource = AutoCompleteSource.CustomSource;
                         (ctl as ComboBox).AutoCompleteCustomSource = colValues;
                         (ctl as ComboBox).Items.AddRange(Program.Config.history);
+                        (ctl as ComboBox).DropDownStyle = ComboBoxStyle.DropDown;
                     }
                 }
             }
@@ -95,7 +84,7 @@ namespace antillesXMLv2
             }
             catch (Exception ex)
             {
-                Program.results.loadText_log(ex.Message);
+                Program.mainframe.results.loadText_log(ex.Message);
             }
         }
 
@@ -183,13 +172,6 @@ namespace antillesXMLv2
             // garbage collector
             GC.Collect(1);
             Program.plsW.Hide();
-
-        }
-
-
-
-        private void Single_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -297,7 +279,7 @@ namespace antillesXMLv2
             catch (Exception ex)
             {
 
-                Program.results.loadText_log(ex.Message);
+                Program.mainframe.results.loadText_log(ex.Message);
                 Program.plsW.Hide();
                 return;
 
@@ -461,7 +443,7 @@ namespace antillesXMLv2
 
             if (Program.Config.parameterIsSet == false)
             {
-                // Program.results.loadText_log("Please assign or reassign a Stylesheet.");
+                // Program.mainframe.results.loadText_log("Please assign or reassign a Stylesheet.");
                 return;
             }
 
@@ -491,7 +473,7 @@ namespace antillesXMLv2
 
             if (Program.Config.parameterIsSet == false)
             {
-                Program.results.loadText_log("Parameters not saved. Please assign or reassign a Stylesheet.");
+                Program.mainframe.results.loadText_log("Parameters not saved. Please assign or reassign a Stylesheet.");
                 return;
             }
 
@@ -511,17 +493,20 @@ namespace antillesXMLv2
                     check = true;
                 }
             }
-            if (check) { Program.results.loadText_log("Parameters saved"); check = false; }
+            if (check) { Program.mainframe.results.loadText_log("Parameters saved"); check = false; }
         }
 
         private void Xslt_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;
-            Program.WINDOW_STATE = true;
-            Program.results.state = false;
-            Program.results.Hide();
-            Program.mainframe.formSwitcher();
-            Program.wizard.Show();
+            if (!Program.QUIT)
+            {
+                e.Cancel = true;
+                Program.WINDOW_STATE = true;
+                Program.mainframe.results.state = false;
+                Program.mainframe.results.Hide();
+                Program.mainframe.formSwitcher();
+                Program.mainframe.wizard.Show();
+            }
         }
 
         private void Xslt_Load(object sender, EventArgs e)
@@ -548,9 +533,6 @@ namespace antillesXMLv2
         {
 
         }
-
-
-
 
         private void dataGridView_pipeline_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -782,7 +764,7 @@ namespace antillesXMLv2
 
             catch (Exception)
             {
-                Program.results.loadText_log("Loading failed");
+                Program.mainframe.results.loadText_log("Loading failed");
             }
         }
 
@@ -811,6 +793,21 @@ namespace antillesXMLv2
                 }
 
             }
+        }
+
+        private void combobox_input_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void combobox_input_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void combobox_input_Enter(object sender, EventArgs e)
+        {
+          
         }
 
     }

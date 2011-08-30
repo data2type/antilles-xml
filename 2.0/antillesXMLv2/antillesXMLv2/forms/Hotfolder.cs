@@ -150,7 +150,7 @@ namespace antillesXMLv2
                 return;
             }
 
-            Program.results.loadText_log("Hotfolder Session started.");
+            Program.mainframe.results.loadText_log("Hotfolder Session started.");
                       
             // transform
             running = true;
@@ -171,7 +171,7 @@ namespace antillesXMLv2
                 running = false;
                 label_hotfolder.Visible = false;
                 Program.mainframe.menuStrip.Enabled = true;
-                Program.results.loadText_log("Hotfolder Session finished.");
+                Program.mainframe.results.loadText_log("Hotfolder Session finished.");
                 Program.Config.hotfolder = false;
             }
         }
@@ -184,40 +184,43 @@ namespace antillesXMLv2
         private void Hotfolder_FormClosing(object sender, FormClosingEventArgs e)
         {
 
-
-            if (Program.Config.hotfolder)
+            if (!Program.QUIT)
             {
-
-                try
+                if (Program.Config.hotfolder)
                 {
 
-                    Program.hotfold.FSW_Stop();
-                    Program.results.loadText_log("Hotfolder Session finished");
-                    Program.Config.hotfolder = false;
+                    try
+                    {
+
+                        Program.hotfold.FSW_Stop();
+                        Program.mainframe.results.loadText_log("Hotfolder Session finished");
+                        Program.Config.hotfolder = false;
+
+                    }
+                    catch (Exception)
+                    {
+
+                        Program.mainframe.results.loadText_log("Hotfolder still active!");
+
+                    }
 
                 }
-                catch (Exception)
-                {
 
-                    Program.results.loadText_log("Hotfolder still active!");
-
-                }
-
+                e.Cancel = true;
+                Program.WINDOW_STATE = true;
+                Program.mainframe.results.state = false;
+                Program.mainframe.results.Hide();
+                Program.mainframe.formSwitcher();
+                Program.mainframe.wizard.Show();
             }
-
-            e.Cancel = true;
-            Program.WINDOW_STATE = true;
-            Program.results.state = false;
-            Program.results.Hide();
-            Program.mainframe.formSwitcher();
-            Program.wizard.Show();
+           
         }
 
         private void button_saveParas_Click(object sender, EventArgs e)
         {
             if (Program.Config.parameterIsSet == false)
             {
-                Program.results.loadText_log("Parameters not saved. Please assign or reassign a Stylesheet.");
+                Program.mainframe.results.loadText_log("Parameters not saved. Please assign or reassign a Stylesheet.");
                 return;
             }
 
@@ -237,7 +240,7 @@ namespace antillesXMLv2
 
                 }
             }
-            if (check) { Program.results.loadText_log("Parameters saved"); check = false; }
+            if (check) { Program.mainframe.results.loadText_log("Parameters saved"); check = false; }
         }
 
         private void tabPage_parameters_Enter(object sender, EventArgs e)
@@ -246,7 +249,7 @@ namespace antillesXMLv2
 
             if (Program.Config.parameterIsSet == false) {
 
-                Program.results.loadText_log("Please assign or reassign a Stylesheet.");
+                Program.mainframe.results.loadText_log("Please assign or reassign a Stylesheet.");
                 return; 
             
             }

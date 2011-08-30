@@ -69,6 +69,7 @@
             this.MaximumSize = new System.Drawing.Size(380, 300);
             this.MinimumSize = new System.Drawing.Size(380, 300);
             this.Name = "About";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "About antillesXML";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

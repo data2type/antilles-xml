@@ -473,7 +473,7 @@
             this.MinimumSize = new System.Drawing.Size(500, 540);
             this.Name = "Eigenschaften";
             this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Settings";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Eigenschaften_FormClosing);
             this.groupBox_Whitespace.ResumeLayout(false);

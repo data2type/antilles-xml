@@ -15,46 +15,23 @@ namespace antillesXMLv2
         /// Global Vars
         /// </summary>  
         public static bool WINDOW_STATE = false;
+        public static bool QUIT = false;
 
         /// <summary>
-        /// Global static Forms
-        /// </summary>    
-
-
-        public static config Config = new config();
-        public static Xproc xproc = new Xproc();
-        public static Xslt xslt = new Xslt();
-        public static Xslfo xslfo = new Xslfo();
-        public static Results results = new Results();
-        public static XsdValidate dtd = new XsdValidate();
-        public static XsdValidate_xsd xsd = new XsdValidate_xsd();
-        public static schematron schematron = new schematron();
-        public static SchematronValidate schematronvalidate = new SchematronValidate();
-        public static Word2Gen word = new Word2Gen();
-        public static PleaseWait plsW = new PleaseWait();
-        public static Csv2Xml csv2xml = new Csv2Xml();
-        public static SyntaxHighlighting syntaxhighlighting = new SyntaxHighlighting();
-        public static Hotfolder hotfoldForm = new Hotfolder();
-        public static About about = new About();
-        public static Eigenschaften eigenschaften = new Eigenschaften();
-        public static CheckUpdate checkupdate = new CheckUpdate();
-        public static Help help = new Help();
-        public static ReportBug reportBug = new ReportBug();
-        public static Wizard wizard = new Wizard();
-        public static XsdDoku xsddoku = new XsdDoku();
-        public static validator validate = new validator();
-        public static transformer transform = new transformer();
-        public static word2generic word2gen = new word2generic();
-        public static FileSystemWatcher FSW;
-        public static hotfolder hotfold = new hotfolder();
+        /// Global static Forms & Helper Classes
+        /// </summary> 
+        /// 
+        public static config Config = new config();      
+        public static transformer transform = new transformer();       
+        public static FileSystemWatcher FSW;      
         public static Splash splash = new Splash();
+        public static PleaseWait plsW = new PleaseWait();
+        public static schematron schematron = new schematron();       
+        public static validator validate = new validator();
+        public static hotfolder hotfold = new hotfolder();
+        public static word2generic word2gen = new word2generic();         
 
-
-        /// <summary>
-        /// Global static Classes
-        /// </summary>       
-
-        public static Mainframe mainframe = new Mainframe();
+        public static Mainframe mainframe;
 
         [STAThread]
         static void Main()
@@ -154,27 +131,16 @@ namespace antillesXMLv2
                     Config.history[0] = "";
 
                 }
-
-                xslt.setTextboxRange();
-                xslfo.setTextboxRange();
-                xsd.setTextboxRange();
-                xsddoku.setTextboxRange();
-                xproc.setTextboxRange();
-                word.setTextboxRange();
-                syntaxhighlighting.setTextboxRange();
-                schematronvalidate.setTextboxRange();
-                hotfoldForm.setTextboxRange();
-                dtd.setTextboxRange();
-                csv2xml.setTextboxRange();
+               
             }
 
             string location = Application.StartupPath;
             Environment.SetEnvironmentVariable("SAXON_HOME", location);
-
+            mainframe = new Mainframe();
             System.Threading.Thread.Sleep(2000);
 
             splash.Hide();
-            //   Application.SetCompatibleTextRenderingDefault(false);
+           
             Application.Run(mainframe);
         }
        
