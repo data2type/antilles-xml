@@ -382,6 +382,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Content Include="testFiles.zip" />
   </ItemGroup>
   <ItemGroup>
     <None Include="gfx\target.png" />
@@ -582,6 +583,7 @@
     <Content Include="lib\schematron\schema\theSchema.xsl" />
     <Content Include="lib\schematron\SvrlReportText.xslt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

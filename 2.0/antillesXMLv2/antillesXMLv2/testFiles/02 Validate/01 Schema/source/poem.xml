@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<poems xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../schema/poem.xsd">
+	<poem publicationYear="1874" language="en">
+		<author>
+			<firstName>Arthur William Edgar</firstName>
+			<familyName>O'Shaughnessy</familyName>
+		</author>
+		<title>Ode</title>
+		<verse> 
+			<line>We are the music makers,</line>
+			<line>And we are the dreamer of dreams,</line>
+			<line>Wandering by lone sea-breakers,</line>
+			<line>And sitting by desolate streams;</line>
+			<line>World-losers and world-forsakers,</line>
+			<line>On whom the pale moon gleams:</line>
+			<line>Yet we are the movers and shakers</line>
+			<line>Of the world for ever, it seems.</line>
+		</verse>
+		<verse>
+			<line>With wonderful deathless ditties,</line>
+			<line>We build up the world's great cities,</line>
+			<line>And out of a fabulous story</line>
+			<line>We fashion an empire's glory:</line>
+			<line>One man with a dream, at pleasure,</line>
+			<line>Shall go forth and conquer a crown;</line>
+			<line>And three with a new song's measure</line>
+			<line>Can trample an empire down.</line>
+		</verse>
+		<verse>
+			<line>We, in the ages lying</line>
+			<line>In the buried past of earth,</line>
+			<line>Built Nineveh with our sighing,</line>
+			<line>And Babel itself with our mirth;</line>
+			<line>And o'erthrew them with prophesying</line>
+			<line>To the old of the new world's worth;</line>
+			<line>For each age is a dream that is dying,</line>
+			<line>Or one that is coming to birth.</line>
+		</verse>
+		<verse>
+			<line>A breath of our inspiration,</line>
+			<line>Is the life of each generation.</line>
+			<line>A wondrous thing of our dreaming,</line>
+			<line>Unearthly, impossible seeming-</line>
+			<line>The soldier, the king, and the peasant</line>
+			<line>Are working together in one,</line>
+			<line>Till our dream shall become their present,</line>
+			<line>And their work in the world be done.</line>
+		</verse>
+		<verse>
+			<line>They had no vision amazing</line>
+			<line>Of the goodly house they are raising.</line>
+			<line>They had no divine foreshowing</line>
+			<line>Of the land to which they are going:</line>
+			<line>But on one man's soul it hath broke,</line>
+			<line>A light that doth not depart</line>
+			<line>And his look, or a word he hath spoken,</line>
+			<line>Wrought flame in another man's heart.</line>
+		</verse>
+		<verse>
+			<line>And therefore today is thrilling,</line>
+			<line>With a past day's late fulfilling.</line>
+			<line>And the multitudes are enlisted</line>
+			<line>In the faith that their fathers resisted,</line>
+			<line>And, scorning the dream of tomorrow,</line>
+			<line>Are bringing to pass, as they may,</line>
+			<line>In the world, for it's joy or it's sorrow,</line>
+			<line>The dream that was scorned yesterday.</line>
+		</verse>
+		<verse>
+			<line>But we, with our dreaming and singing,</line>
+			<line>Ceaseless and sorrowless we!</line>
+			<line>The glory about us clinging</line>
+			<line>Of the glorious futures we see,</line>
+			<line>Our souls with high music ringing;</line>
+			<line>O men! It must ever be</line>
+			<line>That we dwell, in our dreaming and singing,</line>
+			<line>A little apart from ye.</line>
+		</verse>
+		<verse>
+			<line>For we are afar with the dawning</line>
+			<line>And the suns that are not yet high,</line>
+			<line>And out of the infinite morning</line>
+			<line>Intrepid you hear us cry-</line>
+			<line>How, spite of your human scorning,</line>
+			<line>Once more God's future draws nigh,</line>
+			<line>And already goes forth the warning</line>
+			<line>That ye of the past must die.</line>
+		</verse>
+		<verse>
+			<line>Great hail! we cry to the corners</line>
+			<line>From the dazzling unknown shore;</line>
+			<line>Bring us hither your sun and your summers,</line>
+			<line>And renew our world as of yore;</line>
+			<line>You shall teach us your song's new numbers,</line>
+			<line>And things that we dreamt not before;</line>
+			<line>Yea, in spite of a dreamer who slumbers,</line>
+			<line>And a singer who sings no more.</line>
+		</verse>
+	</poem>
+	<poem publicationYear="1905" language="de">
+		<author>
+			<firstName>Rainer Maria</firstName>
+			<familyName>Rilke</familyName>
+		</author>
+		<title>Der Panther</title>
+		<subtitle>Im Jardin des Plantes, Paris </subtitle>
+		<verse>
+			<line>Sein Blick ist vom Vorübergehn der Stäbe</line>
+			<line>so müd geworden, daß er nichts mehr hält.</line>
+			<line>Ihm ist, als ob es tausend Stäbe gäbe</line>
+			<line> und hinter tausend Stäben keine Welt. </line>
+		</verse>
+		<verse>
+			<line>Der weiche Gang geschmeidig starker Schritte, </line>
+			<line> der sich im allerkleinsten Kreise dreht, </line>
+			<line> ist wie ein Tanz von Kraft um eine Mitte, </line>
+			<line>in der betäubt ein großer Wille steht. </line>
+		</verse>
+		<verse>
+			<line> Nur manchmal schiebt der Vorhang der <bold>Pupille</bold>
+			</line>
+			<line>sich lautlos auf -. Dann geht ein Bild hinein, </line>
+			<line> geht durch der <bold>Glieder</bold> angespannte Stille - </line>
+			<line>und hört im <bold>Herzen</bold> auf zu sein. </line>
+		</verse>
+	</poem>
+
+</poems>

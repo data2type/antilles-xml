@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<poems  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../schema/poem.xsd">
+	<poem publicationYear="1849" language="en">
+		<author>
+			<firstName>Edgar Allan</firstName>
+			<familyName>Po</familyName>
+		</author>
+		<title>A Dream</title>
+		<verse>
+			<line>In visions of the dark night</line>
+			<line>I have dreamed of joy departed,</line>
+			<line>But a waking dream of life and light</line>
+			<line>Hath left me broken-hearted.</line>
+			<line>Ah! what is not a dream by day</line>
+			<line>To him whose eyes are cast</line>
+			<line>On things around him with a ray</line>
+			<line>Turned back upon the past?</line>
+			<line>That holy dream -that holy dream,</line>
+			<line>While all the world were chiding,</line>
+			<line>Hath cheered me as a lovely beam</line>
+			<line>A lonely spirit guiding.</line>
+			<line>What though that light, thro' storm and night,</line>
+			<line>So trembled from afar,</line>
+			<line>What could there be more purely bright</line>
+			<line>In Truth's day-star.</line>
+		</verse>
+	</poem>
+
+</poems>

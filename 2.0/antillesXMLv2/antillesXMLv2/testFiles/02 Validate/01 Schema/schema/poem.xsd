@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="poem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="author"/>
+        <xs:element ref="title"/>
+        <xs:element minOccurs="0" ref="subtitle"/>
+        <xs:element maxOccurs="unbounded" ref="verse"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.poem"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="author">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="firstName"/>
+        <xs:element ref="familyName"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bold" type="xs:string"/>
+  <xs:attributeGroup name="attlist.poem">
+    <xs:attribute name="publicationYear" use="required"/>
+    <xs:attribute name="language" default="de">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="de"/>
+          <xs:enumeration value="el"/>
+          <xs:enumeration value="en"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="poems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="poem"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="italic" type="xs:string"/>
+  <xs:element name="familyName" type="xs:string"/>
+  <xs:element name="verse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="line"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="subtitle" type="xs:string"/>
+  <xs:element name="line">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="bold"/>
+        <xs:element ref="italic"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="firstName" type="xs:string"/>
+</xs:schema>

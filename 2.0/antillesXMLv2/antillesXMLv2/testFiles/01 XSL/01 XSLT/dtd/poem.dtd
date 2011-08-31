@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT poem (author, title, subtitle?, verse+)>
+<!ELEMENT author (firstName, familyName)>
+<!ELEMENT bold (#PCDATA)>
+<!ATTLIST poem
+	publicationYear CDATA #REQUIRED
+	language (de | el | en) "de"
+>
+<!ELEMENT poems (poem+)>
+<!ELEMENT italic (#PCDATA)>
+<!ELEMENT familyName (#PCDATA)>
+<!ELEMENT verse (line+)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT subtitle (#PCDATA)>
+<!ELEMENT line (#PCDATA | bold | italic)*>
+<!ELEMENT firstName (#PCDATA)>
