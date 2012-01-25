@@ -202,9 +202,9 @@
             this.radioButton_TinyTree.CausesValidation = false;
             this.radioButton_TinyTree.Location = new System.Drawing.Point(18, 40);
             this.radioButton_TinyTree.Name = "radioButton_TinyTree";
-            this.radioButton_TinyTree.Size = new System.Drawing.Size(184, 17);
+            this.radioButton_TinyTree.Size = new System.Drawing.Size(182, 17);
             this.radioButton_TinyTree.TabIndex = 13;
-            this.radioButton_TinyTree.Text = "Tinytree Structure (Default)";
+            this.radioButton_TinyTree.Text = "Tinytree Structure (default)";
             this.radioButton_TinyTree.UseVisualStyleBackColor = true;
             this.radioButton_TinyTree.Click += new System.EventHandler(this.radioButton_TinyTree_CheckedChanged);
             // 

@@ -141,23 +141,23 @@
             // 
             this.xSLTTransformationToolStripMenuItem.Image = global::antillesXMLv2.Properties.Resources.xslt;
             this.xSLTTransformationToolStripMenuItem.Name = "xSLTTransformationToolStripMenuItem";
-            this.xSLTTransformationToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.xSLTTransformationToolStripMenuItem.Text = "XSLT Transformation";
+            this.xSLTTransformationToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.xSLTTransformationToolStripMenuItem.Text = "XSLT";
             this.xSLTTransformationToolStripMenuItem.Click += new System.EventHandler(this.xSLTTransformationToolStripMenuItem_Click);
             // 
             // xSLFOToolStripMenuItem
             // 
             this.xSLFOToolStripMenuItem.Image = global::antillesXMLv2.Properties.Resources.xsl_fo;
             this.xSLFOToolStripMenuItem.Name = "xSLFOToolStripMenuItem";
-            this.xSLFOToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.xSLFOToolStripMenuItem.Text = "XSL-FO ";
+            this.xSLFOToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.xSLFOToolStripMenuItem.Text = "XSL-FO";
             this.xSLFOToolStripMenuItem.Click += new System.EventHandler(this.xSLFOToolStripMenuItem_Click);
             // 
             // xProcToolStripMenuItem
             // 
             this.xProcToolStripMenuItem.Image = global::antillesXMLv2.Properties.Resources.xproc;
             this.xProcToolStripMenuItem.Name = "xProcToolStripMenuItem";
-            this.xProcToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.xProcToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
             this.xProcToolStripMenuItem.Text = "XProc";
             this.xProcToolStripMenuItem.Click += new System.EventHandler(this.xProcToolStripMenuItem_Click);
             // 
@@ -175,24 +175,24 @@
             // 
             this.xMLSchemaToolStripMenuItem.Image = global::antillesXMLv2.Properties.Resources.schema;
             this.xMLSchemaToolStripMenuItem.Name = "xMLSchemaToolStripMenuItem";
-            this.xMLSchemaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.xMLSchemaToolStripMenuItem.Text = "XML Schema";
+            this.xMLSchemaToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.xMLSchemaToolStripMenuItem.Text = "XML Schema Validation";
             this.xMLSchemaToolStripMenuItem.Click += new System.EventHandler(this.xMLSchemaToolStripMenuItem_Click);
             // 
             // dTDToolStripMenuItem
             // 
             this.dTDToolStripMenuItem.Image = global::antillesXMLv2.Properties.Resources.dtd;
             this.dTDToolStripMenuItem.Name = "dTDToolStripMenuItem";
-            this.dTDToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.dTDToolStripMenuItem.Text = "DTD";
+            this.dTDToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.dTDToolStripMenuItem.Text = "DTD Validation";
             this.dTDToolStripMenuItem.Click += new System.EventHandler(this.dTDToolStripMenuItem_Click);
             // 
             // schematronToolStripMenuItem
             // 
             this.schematronToolStripMenuItem.Image = global::antillesXMLv2.Properties.Resources.schematron;
             this.schematronToolStripMenuItem.Name = "schematronToolStripMenuItem";
-            this.schematronToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.schematronToolStripMenuItem.Text = "Schematron";
+            this.schematronToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.schematronToolStripMenuItem.Text = "Schematron Validation";
             this.schematronToolStripMenuItem.Click += new System.EventHandler(this.schematronToolStripMenuItem_Click);
             // 
             // toolsToolStripMenuItem
@@ -212,7 +212,7 @@
             this.wordToXMLToolStripMenuItem.Image = global::antillesXMLv2.Properties.Resources.word;
             this.wordToXMLToolStripMenuItem.Name = "wordToXMLToolStripMenuItem";
             this.wordToXMLToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
-            this.wordToXMLToolStripMenuItem.Text = "Word to XML";
+            this.wordToXMLToolStripMenuItem.Text = "Word 2 Generic";
             this.wordToXMLToolStripMenuItem.Click += new System.EventHandler(this.wordToXMLToolStripMenuItem_Click);
             // 
             // calsToHTMLToolStripMenuItem
@@ -220,15 +220,15 @@
             this.calsToHTMLToolStripMenuItem.Image = global::antillesXMLv2.Properties.Resources.excel;
             this.calsToHTMLToolStripMenuItem.Name = "calsToHTMLToolStripMenuItem";
             this.calsToHTMLToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
-            this.calsToHTMLToolStripMenuItem.Text = "CSV to XML";
+            this.calsToHTMLToolStripMenuItem.Text = "CSV 2 XML";
             this.calsToHTMLToolStripMenuItem.Click += new System.EventHandler(this.calsToHTMLToolStripMenuItem_Click);
             // 
             // xMLSyntaxhighlightingToolStripMenuItem
             // 
             this.xMLSyntaxhighlightingToolStripMenuItem.Image = global::antillesXMLv2.Properties.Resources.xmlsyntax;
             this.xMLSyntaxhighlightingToolStripMenuItem.Name = "xMLSyntaxhighlightingToolStripMenuItem";
-            this.xMLSyntaxhighlightingToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
-            this.xMLSyntaxhighlightingToolStripMenuItem.Text = "XML Syntaxhighlighting";
+            this.xMLSyntaxhighlightingToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
+            this.xMLSyntaxhighlightingToolStripMenuItem.Text = "XML Syntax Highlighting";
             this.xMLSyntaxhighlightingToolStripMenuItem.Click += new System.EventHandler(this.xMLSyntaxhighlightingToolStripMenuItem_Click);
             // 
             // hotfolderToolStripMenuItem

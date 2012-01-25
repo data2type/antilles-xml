@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "antillesXMLv2", "antillesXMLv2\antillesXMLv2.csproj", "{4EB0D449-F418-4B45-8D18-F9D7FA163351}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{51E4B90A-DFB2-4174-B95F-DEAD668067A8}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupAntillesXML", "SetupAntillesXML\SetupAntillesXML.vdproj", "{67765097-9AD2-4D6E-921A-7BD24EAAA992}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +15,8 @@ Global
 		{4EB0D449-F418-4B45-8D18-F9D7FA163351}.Debug|x86.Build.0 = Debug|x86
 		{4EB0D449-F418-4B45-8D18-F9D7FA163351}.Release|x86.ActiveCfg = Release|x86
 		{4EB0D449-F418-4B45-8D18-F9D7FA163351}.Release|x86.Build.0 = Release|x86
-		{51E4B90A-DFB2-4174-B95F-DEAD668067A8}.Debug|x86.ActiveCfg = Debug
-		{51E4B90A-DFB2-4174-B95F-DEAD668067A8}.Release|x86.ActiveCfg = Release
+		{67765097-9AD2-4D6E-921A-7BD24EAAA992}.Debug|x86.ActiveCfg = Debug
+		{67765097-9AD2-4D6E-921A-7BD24EAAA992}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

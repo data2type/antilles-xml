@@ -377,7 +377,7 @@
             this.Name = "Xslfo";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "XSL-FO Transformations";
+            this.Text = "XSL-FO";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Xslfo_FormClosing);
             this.tabControl_xslfo.ResumeLayout(false);
             this.tabPage_xslfoSingle.ResumeLayout(false);

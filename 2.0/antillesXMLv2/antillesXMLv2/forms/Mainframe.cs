@@ -384,7 +384,7 @@ namespace antillesXMLv2
                 }
             
             }
-
+            eigenschaften.Hide();
             Application.Exit();
         }
 

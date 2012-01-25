@@ -89,7 +89,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CheckUpdate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Checking Update";
+            this.Text = "Updates";
             this.Shown += new System.EventHandler(this.CheckUpdate_Shown);
             this.VisibleChanged += new System.EventHandler(this.CheckUpdate_VisibleChanged);
             this.ResumeLayout(false);

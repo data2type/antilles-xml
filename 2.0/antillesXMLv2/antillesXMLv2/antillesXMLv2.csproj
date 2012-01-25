@@ -51,13 +51,11 @@
   <ItemGroup>
     <Reference Include="IKVM.OpenJDK.Core, Version=0.42.0.3, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\IKVM.OpenJDK.Core.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Saxonica\SaxonEE9.4N\bin\IKVM.OpenJDK.Core.dll</HintPath>
     </Reference>
     <Reference Include="saxon9ee-api, Version=9.3.0.5, Culture=neutral, PublicKeyToken=e1fdd002d5083fe6, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\saxon9ee-api.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Saxonica\SaxonEE9.4N\bin\saxon9ee-api.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -228,18 +226,6 @@
     <None Include="gfx\antillesXMLSplash.png" />
     <None Include="gfx\about_info.png" />
     <None Include="gfx\success.png" />
-    <None Include="bin\IKVM.OpenJDK.Charsets.dll" />
-    <None Include="bin\IKVM.OpenJDK.Core.dll" />
-    <None Include="bin\IKVM.OpenJDK.Security.dll" />
-    <None Include="bin\IKVM.OpenJDK.Text.dll" />
-    <None Include="bin\IKVM.OpenJDK.Util.dll" />
-    <None Include="bin\IKVM.OpenJDK.XML.API.dll" />
-    <None Include="bin\IKVM.Runtime.dll" />
-    <Content Include="bin\Query.exe" />
-    <None Include="bin\saxon9ee-api.dll" />
-    <None Include="bin\saxon9ee.dll" />
-    <Content Include="bin\Transform.exe" />
-    <Content Include="bin\Validate.exe" />
     <Content Include="lib\input.xml" />
     <Content Include="lib\xs3p\default.html" />
     <Content Include="lib\xs3p\examples\build.xml" />
@@ -583,7 +569,9 @@
     <Content Include="lib\schematron\schema\theSchema.xsl" />
     <Content Include="lib\schematron\SvrlReportText.xslt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

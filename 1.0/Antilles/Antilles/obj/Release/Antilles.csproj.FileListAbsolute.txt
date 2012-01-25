@@ -88,3 +88,5 @@ C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antille
 C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\obj\Release\Antilles.exe
 C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\obj\Release\Antilles.pdb
 C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\Antilles\Antilles\obj\Release\Antilles.WordML.resources
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\1.0\Antilles\Antilles\bin\Release\Antilles.exe.config
+C:\Users\Tobias J. Goertz\Documents\Visual Studio 2010\Projects\antillesXML\1.0\Antilles\Antilles\obj\Release\Antilles.exe

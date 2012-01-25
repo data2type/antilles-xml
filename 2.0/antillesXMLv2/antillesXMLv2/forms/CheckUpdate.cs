@@ -29,7 +29,7 @@ namespace antillesXMLv2
 
             double ver = Convert.ToDouble(version);
 
-            if (ver > 1.0)
+            if (ver > 0.2)
             {
 
                 label_new.Visible = true;

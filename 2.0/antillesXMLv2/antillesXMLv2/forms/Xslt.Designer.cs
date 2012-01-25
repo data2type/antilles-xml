@@ -482,7 +482,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "XSLT Transformations";
+            this.Text = "XSLT";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Xslt_FormClosing);
             this.Load += new System.EventHandler(this.Xslt_Load);
             this.tabControl.ResumeLayout(false);
